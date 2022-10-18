@@ -1,0 +1,1314 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+  <title>CM-SS13 Changelog</title>
+  <link rel="stylesheet" type="text/css" href="changelog.css">
+  <base target="_blank" />
+  <script type='text/javascript'>
+
+	function changeText(tagID, newText, linkTagID){
+		var tag = document.getElementById(tagID);
+		tag.innerHTML = newText;
+		var linkTag = document.getElementById(linkTagID);
+		linkTag.removeAttribute("href");
+		linkTag.removeAttribute("onclick");
+	}
+
+  </script>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+</head>
+
+
+<body>
+<table align='center' width='650'><tr><td>
+<table align='center' class="top">
+	<tr>
+		<td valign='top'>
+			<div align='center'><font size='3'><b>Welcome to CM-SS13!</b></font></div><br>
+			<div align='center'><font size='2'><i>CM-SS13 is a medium-roleplay Space Station 13 server inspired by the Aliens film and built from a heavily modified Baystation 12.</i></font></div>
+			<br>
+			<div align='center'><font size='3'><a href="https://cm-ss13.com/viewforum.php?f=82">Rules</a> | <a href="https://cm-ss13.com/">Forum</a> | <a href="https://cm-ss13.com/wiki">Wiki</a><br></font></div>
+		</td>
+	</tr>
+</table>
+
+
+<br><b>CM-SS13 Development Team</b>
+<table align='center' class="top">
+	<tr>
+		<td valign='top'>
+			<font size='2'><b>Notice:</b> Pre-OS contribution list has been moved to https://cm-ss13.com/forums/showthread.php?7250<br></font>
+			<font size='2'><b>Host:</b> NGGJamie<br></font>
+			<font size='2'><b>Head Developer:</b> Triiodine<br></font>
+			<font size='2'><b>Head Manager:</b> Grimcad<br></font>
+			<font size='2'><b>Maintainers:</b> Waltermeldron, Neth Iafin, TobiNerd, Spookydonut, Fourkhan<br></font>
+			<font size='2'><b>Coders:</b> Waltermeldron, Neth Iafin, Spookydonut, Alardun, Firartix, UnwaveringGrey, ThePiachu, ghostsheet, jeser, thedonkified, Fourkhan, TobiNerd, Foolosopher, DingleFlop, carlarc<br></font>
+			<font size='2'><b>Mappers:</b> TobiNerd, Nanu, Triiodine<br></font>
+			<font size='2'><b>Spriters:</b> Triiodine, Nauticall, lengord<br></font>
+			<font size='2'><b>Thanks to:</b> Baystation 12, /tg/station 13, and the original SpaceStation developers<br></font>
+			<font size='2'><b>Thanks to:</b> MrStonedOne for StonedMC 2016 (under GPLv3 license from VG13)<br></font>
+		</td>
+	</tr>
+</table>
+
+<table align='center' class="top">
+	<tr>
+		<td valign='top'>
+			<div align='center'><font size='2'><br> Changelogs:
+			<a href="https://cm-ss13.com/changelog/changelog2015.html">2015</a> |
+			<a href="https://cm-ss13.com/changelog/changelog2016.html">2016</a> |
+			<a href="https://cm-ss13.com/changelog/changelog2017.html">2017</a> |
+			<a href="https://cm-ss13.com/changelog/changelog2018.html">2018</a> |
+			<a href="https://cm-ss13.com/changelog/changelog2019.html">2019</a><br></font></div>
+		</td>
+	</tr>
+</table>
+
+			<h2 class="date">04 April 2021</h2>
+			<h3 class="author">Firartix updated:</h3>
+			<ul class="changes bgimages16">
+				<li class="rscadd">Add verb to change ship map - though there are currently no alternatives to Almayer</li>
+				<li class="tweak">BYOND Pager information will now show both ship and ground maps</li>
+			</ul>
+			<h3 class="author">Segrain updated:</h3>
+			<ul class="changes bgimages16">
+				<li class="bugfix">Status panel for xenomorphs once again works properly.</li>
+			</ul>
+
+			<h2 class="date">03 April 2021</h2>
+			<h3 class="author">Carlarc updated:</h3>
+			<ul class="changes bgimages16">
+				<li class="tweak">Turns caste_name strings into defines.</li>
+			</ul>
+			<h3 class="author">Firartix updated:</h3>
+			<ul class="changes bgimages16">
+				<li class="bugfix">Fixed missing argument during some movement triggered actions</li>
+				<li class="tweak">minor backend refactor around effects and hive structures processing</li>
+				<li class="tweak">Reimplemented perf logging controller</li>
+			</ul>
+			<h3 class="author">Jeser updated:</h3>
+			<ul class="changes bgimages16">
+				<li class="tweak">Breaking vehicle hull with turn off vehicle lights. Fully fixing vehicle hull will turn lights back on.</li>
+			</ul>
+			<h3 class="author">Segrain updated:</h3>
+			<ul class="changes bgimages16">
+				<li class="bugfix">Lucky feathers are now available in loadout in all intended colours.</li>
+				<li class="bugfix">CORSAT Researcher survivors now properly get their gear and skills.</li>
+			</ul>
+
+			<h2 class="date">02 April 2021</h2>
+			<h3 class="author">Firartix updated:</h3>
+			<ul class="changes bgimages16">
+				<li class="tweak">Debug messages are now tagged as such for filtering in chat.</li>
+			</ul>
+			<h3 class="author">Vanagandr updated:</h3>
+			<ul class="changes bgimages16">
+				<li class="bugfix">quick_equip_inventory keybind now works.</li>
+			</ul>
+			<h3 class="author">Waltermeldron updated:</h3>
+			<ul class="changes bgimages16">
+				<li class="tweak">Increased cost of communication disruption and evolution boost techs to 10.</li>
+				<li class="tweak">Moved shielding slashes back to T2, nerfed it back to its original state.</li>
+				<li class="tweak">Re-added back acidic blood tech and buffed it.</li>
+				<li class="tweak">Buffed acid grenade to have a longer range and also have different levels of acid depending on the range. Also cannot be picked up via macro anymore.</li>
+			</ul>
+			<h3 class="author">forest2001 updated:</h3>
+			<ul class="changes bgimages16">
+				<li class="rscadd">Added a verb to allow predators to dye their capes. It has a single use only and can only be accessede via right-click on the cape.</li>
+			</ul>
+
+			<h2 class="date">01 April 2021</h2>
+			<h3 class="author">Firartix updated:</h3>
+			<ul class="changes bgimages16">
+				<li class="experiment">limited concurrent async rustg requests in flight from DBQM Controller</li>
+			</ul>
+			<h3 class="author">Lengord updated:</h3>
+			<ul class="changes bgimages16">
+				<li class="rscadd">Added RTO ringing sprites</li>
+			</ul>
+			<h3 class="author">Segrain updated:</h3>
+			<ul class="changes bgimages16">
+				<li class="bugfix">Deconstructing sandbag barricades once again yields correct quantity of sandbags.</li>
+			</ul>
+			<h3 class="author">Vanagandr updated:</h3>
+			<ul class="changes bgimages16">
+				<li class="rscadd">Numerous changes to storage items, mostly cosmetic.</li>
+				<li class="rscadd">Accessing a storage item now visibly opens it, if it has open/close sprites. Closing the inventory window also closes the item. This applies to backpacks, satchels, belts, pouches, G8s, first-aid kits, pill bottles, and the vehicle internal storage locker. Looks pretty good generally; a bit weird on first aid kits, but the consistency is worth it I think.</li>
+				<li class="rscdel">An item that can't be dumped out will no longer show an unusable Toggle Tile Dumping verb.</li>
+				<li class="tweak">Attempting to empty an already empty item now fails. Didn't make sense you could keep dumping it out over and over when there was nothing in it.</li>
+				<li class="tweak">Activating a storage item in hand will attempt to empty it automatically, if that's possible. If it's empty and can be folded, activating it will attempt to fold it.</li>
+				<li class="tweak">You can no longer spam storage opening sounds.</li>
+				<li class="tweak">Inventory storage now closes when you die, to prevent cute bugs with items that suddenly pop closed when the owner finally gets around to ghosting or logging out.</li>
+				<li class="tweak">Opening/closing vehicle storage lockers plays SFX.</li>
+				<li class="tweak">Renamed storage 'close()' proc to 'storage_close()' so that looking for the damned thing in the code isn't like pulling teeth.</li>
+				<li class="rscadd">You can now dump pills from one pill bottle to another. Just click on one while holding the one you want to dump out.</li>
+				<li class="imageadd">Adds open/closed overlays for pill bottles. Also shows when empty.</li>
+				<li class="rscadd">The pistol pouch now visually displays holstered guns.</li>
+				<li class="tweak">The UPP knife pouch spawned with 10 knives but could only hold 5. Modified it to be loaded with 5 UPP bayonets instead of the usual throwing knives, in line with what appeared to be the original intention.</li>
+				<li class="tweak">Gunbelts adjusted - ones that can take both automatic pistols and the M44 now use different sprite coords for each, vastly improving appearance. Tweaked mortarbelt base coords.</li>
+				<li class="tweak">Extended when-equipped mouse opacity changes (letting a click anywhere on its 32x32 area count as a direct click) on belts to include belts worn on armour (gunbelt only, I believe) and the G8 pouch generally, which for whatever reason is not actually a Belt-type item.</li>
+				<li class="rscadd">Lockable backpacks open when clicked like other packs, and when doing so display an unlocked overlay whether locked or not.</li>
+				<li class="bugfix">Fixed the Smartpack not properly displaying contents overlays.</li>
+				<li class="bugfix">Fixed the delay in opening a worn backpack running twice.</li>
+				<li class="bugfix">Fixed dead people being able to spam attempts to empty inventory items. It didn't dump out, but did send messages.</li>
+				<li class="bugfix">Emptying a magazine while holding it in your hand now updates its on-mob sprite, if it has one.</li>
+				<li class="tweak">Floorbots and secure storage code tweaked and cleaned up a little.</li>
+				<li class="spellcheck">adjusted description text for many pouches, backpacks, belts, scabbards. Particularly some belts where the M276 description had been copied but insufficiently tweaked. Also fixes a couple typos elsewhere.</li>
+				<li class="bugfix">Pill packets no longer show lid overlays.</li>
+			</ul>
+			<h3 class="author">Waltermeldron updated:</h3>
+			<ul class="changes bgimages16">
+				<li class="rscadd">Moved the phone UI to a separate TGUI panel.</li>
+				<li class="bugfix">Fixed phones hanging up on launch.</li>
+				<li class="bugfix">Fixed phones not correctly disabling headsets when raised to ear.</li>
+				<li class="bugfix">Fixed phones runtiming as soon as they spawn in.</li>
+			</ul>
+			<h3 class="author">naut updated:</h3>
+			<ul class="changes bgimages16">
+				<li class="bugfix">Alcohol is no longer deadly in small doses.</li>
+				<li class="tweak">Alcohol no longer gives you effects past slurring: blurred vision, random movement and passing out has been disabled.</li>
+				<li class="tweak">Threshold for slurring from drinking alcohol increased to 300 from 180.</li>
+				<li class="tweak">Alcohol now metabolizes faster, at the rate of oxycodone (15u metabolized every 5 minutes).</li>
+			</ul>
+
+			<h2 class="date">31 March 2021</h2>
+			<h3 class="author">Segrain updated:</h3>
+			<ul class="changes bgimages16">
+				<li class="bugfix">MARSOC's backpack now has intended sprites.</li>
+				<li class="imageadd">M3-VL vests once again have their sprite when worn.</li>
+			</ul>
+			<h3 class="author">Waltermeldron updated:</h3>
+			<ul class="changes bgimages16">
+				<li class="bugfix">Fixed RTOs being able to launch multiple droppods at once.</li>
+			</ul>
+
+			<h2 class="date">30 March 2021</h2>
+			<h3 class="author">Carlarc updated:</h3>
+			<ul class="changes bgimages16">
+				<li class="rscdel">Fatties have been removed.</li>
+			</ul>
+			<h3 class="author">Triiodine_Bongosz_Fourkhan_WalterMeldron updated:</h3>
+			<ul class="changes bgimages16">
+				<li class="imageadd">Resprited squad glove objects.</li>
+				<li class="imageadd">Resprited helmet netting, adjusted the M10 rain cover.</li>
+				<li class="rscadd">Added trimmed barbed wire, integrated gasmasks, broken NVGS, a bullet pipe, and squad colored lucky feathers to loadout.</li>
+				<li class="bugfix">Fixed the lucky feather not rotating properly.</li>
+				<li class="experiment">Added another ERT Te-[FURTHER DETAILS REDACTED BY ORDER OF UA HIGH COMMAND].</li>
+				<li class="experiment">Made phosphorus grenades actually work against aliens and humans. They are incredibly deadly to both sides.</li>
+			</ul>
+			<h3 class="author">Waltermeldron updated:</h3>
+			<ul class="changes bgimages16">
+				<li class="tweak">Disabled the background option from human life subsystem.</li>
+				<li class="bugfix">Fixed ERT shuttles.</li>
+			</ul>
+			<h3 class="author">naut updated:</h3>
+			<ul class="changes bgimages16">
+				<li class="rscadd">Added tactical tools (and a pouch for them to go in). Function identically to their normal counterparts but come in matte black and deal more damage.</li>
+				<li class="rscadd">Added a tactical medical pouch. Contains techwebs-level upgraded medical equipment, and a fire extinguisher just in case.</li>
+				<li class="rscadd">MARSOC now starts with one of each techweb stimulant in their backpack.</li>
+				<li class="imageadd">Added dedicated sprites for the MARSOC rucksack, matte black tools, and MARSOC medical and tools pouches.</li>
+				<li class="tweak">Removed some buckshot and a phosphor grenade from the MARSOC backpack to accomodate the stimulants, and added an extra C4.</li>
+				<li class="tweak">MARSOC now gets their own tactical medical and tools pouches.</li>
+				<li class="tweak">Changed (and fixed) descriptions of several MARSOC items.</li>
+				<li class="tweak">MARSOC balaclava is now a subitem of the PMC balaclava, and as a result is now facehugger-resistant.</li>
+			</ul>
+
+			<h2 class="date">29 March 2021</h2>
+			<h3 class="author">Carlarc updated:</h3>
+			<ul class="changes bgimages16">
+				<li class="rscdel">Removed barricade bullet resistance and decreased acid resistance. This means cades will be weaker against acid spits and bullets.</li>
+				<li class="tweak">Acid spraying a cade coats it in acid.</li>
+				<li class="soundadd">Slamming into a barricade or unpounceable human (shields, hunters) causes a BONK sound effect. Reduced duration for all slamming stuns. Credits to Forest2001 for the .ogg.</li>
+				<li class="rscdel">You can no longer slam into barricades if you're a T3.</li>
+				<li class="rscadd">You can now multitool sentries if they're above 50% health.</li>
+				<li class="tweak">M39 burst scatter value doubled and burst firerate slightly decreased.</li>
+				<li class="tweak">M39 can no longer fit the vertical grip.</li>
+				<li class="tweak">Allowed UA armor to be worn with anything.</li>
+			</ul>
+			<h3 class="author">Carnage068 updated:</h3>
+			<ul class="changes bgimages16">
+				<li class="tweak">Vanguard's Shield decays over 1.4 seconds, up from 0.4.</li>
+			</ul>
+			<h3 class="author">Nanu updated:</h3>
+			<ul class="changes bgimages16">
+				<li class="maptweak">For LV - Fixes chokepoint on West Caves, and Nightmare Insert Temple.</li>
+			</ul>
+			<h3 class="author">Segrain updated:</h3>
+			<ul class="changes bgimages16">
+				<li class="tweak">Slashing shield now adds a shield immediately upon reaching maximum amount stored.</li>
+			</ul>
+			<h3 class="author">Vanagandr updated:</h3>
+			<ul class="changes bgimages16">
+				<li class="tweak">Made full darkness marginally darker. Only cheaters will notice any difference.</li>
+				<li class="tweak">You can no longer spam the backpack sound by repeatedly trying to insert something that doesn't fit.</li>
+				<li class="tweak">You can no longer insert a burning item into storage. This means lit flares, active welding tools, matches, cigarettes, lighters etc. Technically also the plasma cutter, but those are just map flavour at this point as far as I can tell.</li>
+				<li class="bugfix">Fixed the torii arch on some maps. While it could be message spammed with a flame source, it could not actually be lit. It was also banged on during lighting attempts or just with objects in general, which seems disrespectful.</li>
+				<li class="tweak">Adds enter to hotkey binds.</li>
+			</ul>
+			<h3 class="author">Waltermeldron updated:</h3>
+			<ul class="changes bgimages16">
+				<li class="rscdel">Disabled the voting callback adjustment system.</li>
+				<li class="rscdel">Disables Sorokyne Strata, Prison Cellblocks and CORSAT from being voted on.</li>
+			</ul>
+
+			<h2 class="date">28 March 2021</h2>
+			<h3 class="author">Waltermeldron updated:</h3>
+			<ul class="changes bgimages16">
+				<li class="tweak">Moved fortifying weeds back to T2 and moved shielding slashes up to T3.</li>
+				<li class="tweak">Buffed shielding slashes to give a lot more shield and to acquire shield faster.</li>
+				<li class="tweak">Nerfed wall-piercing ammo to be on the same level as AP, however, it does slightly more damage.</li>
+			</ul>
+
+			<h2 class="date">27 March 2021</h2>
+			<h3 class="author">Firartix updated:</h3>
+			<ul class="changes bgimages16">
+				<li class="bugfix">fix minor issue with synthesis simulator and relating improper chems</li>
+				<li class="tweak">added missing keybinds for Whisper and Cycling intent</li>
+			</ul>
+			<h3 class="author">Nanu updated:</h3>
+			<ul class="changes bgimages16">
+				<li class="maptweak">Fixes LV NM Insert for CLF regarding Fog issue.</li>
+			</ul>
+			<h3 class="author">Waltermeldron updated:</h3>
+			<ul class="changes bgimages16">
+				<li class="bugfix">Fixed a gc issue where human mobs would be retained in a tech's already_accessed even if they were gibbed.</li>
+				<li class="rscadd">Added offensive structures tech which unlocking movable walls, shield pillar and the acid grenade.</li>
+				<li class="rscadd">Added communications blackout tech, preventing radios on the queen's zlevel from being used for a temporary amount of time.</li>
+				<li class="rscadd">Added evolution boost, which boosts the rate of evolution considerably for a temporary amount of time.</li>
+				<li class="tweak">Changed weed damage reduction to have the power level configurable, which scales the point loss per minute as well.</li>
+				<li class="tweak">You can no longer throw items/grenades/etc over cades unless you are behind them.</li>
+				<li class="rscadd">Added in special glows that occur when a xeno/marine has toxins or is fortified by the weed damage reduction tech.</li>
+				<li class="rscdel">Removed the gradual increase in evolution points that xenos get.</li>
+				<li class="rscdel">Removed the following techs: Overshield, Frenzy, Xeno acid blood</li>
+				<li class="bugfix">Fixed movable walls pushing items and dead bodies.</li>
+				<li class="bugfix">Fixed resin acid grenades not carrying over the correct hive properly.</li>
+				<li class="bugfix">Fixed movable walls not visibly taking any damage.</li>
+				<li class="bugfix">Fixed lists possibly not getting cleaned up properly for movable walls.</li>
+				<li class="tweak">Buffed shield pillar to decay slower and to give more shield on proc.</li>
+				<li class="tweak">Tweaks the price of offensive structures to be less.</li>
+			</ul>
+			<h3 class="author">naut updated:</h3>
+			<ul class="changes bgimages16">
+				<li class="imageadd">Added tech tree sprites for dropship budget increase, req budget increase, and cryotroops.</li>
+				<li class="imageadd">Added implant box and ammo kit sprites.</li>
+				<li class="imageadd">Added an (unimplemented) 'ringing' telephone state for future implementation.</li>
+				<li class="tweak">Telephone side-view sprites are now centered. May need mapping updates to make this look good.</li>
+				<li class="tweak">Modified the descriptions of a few techwebs related items.</li>
+			</ul>
+
+			<h2 class="date">26 March 2021</h2>
+			<h3 class="author">Carlarc updated:</h3>
+			<ul class="changes bgimages16">
+				<li class="tweak">The event-only Human Hero subrace has been buffed. They can't break bones, and have halved stuntime. For now this basically only affects the Dutch's Dozen.</li>
+			</ul>
+			<h3 class="author">Firartix updated:</h3>
+			<ul class="changes bgimages16">
+				<li class="rscadd">Framework for Nightmare round variations has been reimplemented directly ingame, and old NMC config ported over</li>
+				<li class="experiment">LV Xeno Structures in Distress Signal are now based off XvX ones pending potential changes - this means significant additional spawned Xeno structures</li>
+				<li class="maptweak">LV-624 received a general lookover, with some changes to area zoning, redesigns (notably Sand Temple), and new nightmare inserts (by Nanu)</li>
+				<li class="maptweak">Big Red Nightmare inserts were retouched across the board to fit recent changes (by BigBoyyo)</li>
+				<li class="maptweak">LV, BR, Trijent, and CORSAT had their folders structures modified, and nightmare landmarks and files added</li>
+				<li class="maptweak">Converted part of inserts to use template_noop, reducing chance of them overlapping</li>
+				<li class="maptweak">Sigma Biodome Ice variation now has its own area and handling</li>
+				<li class="imageadd">Added Nightmare Landmark icon (by Triiodine)</li>
+				<li class="imageadd">Added an icon for xeno wall membrane spawners</li>
+				<li class="tweak">Hive structures should now correctly respect map turfs layering</li>
+				<li class="tweak">Refactored structure spawners to give them more flexibility, eg. per-mode, and added membrane spawner</li>
+				<li class="bugfix">fixes to CI map reports task</li>
+			</ul>
+			<h3 class="author">GabeGnuwall updated:</h3>
+			<ul class="changes bgimages16">
+				<li class="rscadd">Ghost messages now have a link to follow the person who said them</li>
+			</ul>
+			<h3 class="author">GoldenDarkness55 updated:</h3>
+			<ul class="changes bgimages16">
+				<li class="tweak">Removed incendiary shrapnel from RPG WP rocket</li>
+			</ul>
+			<h3 class="author">Segrain updated:</h3>
+			<ul class="changes bgimages16">
+				<li class="bugfix">CORSAT Doctor survivors now properly get their gear and skills.</li>
+			</ul>
+			<h3 class="author">The_Flying_Flail updated:</h3>
+			<ul class="changes bgimages16">
+				<li class="rscadd">Added new survivor types to various maps (details down below).</li>
+				<li class="rscadd">Re-introduced old survivor type to CORSAT to accompany changes to CORSAT corporation LIASON.</li>
+				<li class="rscadd">Added new load-outs to survivor types with the cosmetic overhaul</li>
+				<li class="tweak">Cosmetic overhaul to pre-existing survivors to suit the theme of map.</li>
+				<li class="tweak">Tweaked survivor melee skills to be slightly more proficient in melee combat</li>
+				<li class="tweak">Survivor loadouts for pre-existing survivors</li>
+				<li class="bugfix">Gave prisoner survivor and gang leader satchels.</li>
+				<li class="bugfix">Gave Gang Leader melee skills as the prisoner survivor had melee skills while the prison leader did not</li>
+			</ul>
+			<h3 class="author">Vanagandr updated:</h3>
+			<ul class="changes bgimages16">
+				<li class="rscadd">Being injured by a thrown object now has impact flash and sound effects.</li>
+			</ul>
+
+			<h2 class="date">25 March 2021</h2>
+			<h3 class="author">Carlarc updated:</h3>
+			<ul class="changes bgimages16">
+				<li class="rscadd">Extinguishers can now decloak. This causes a 10 second cooldown on marine cloaks and 20 second cooldown on the predator cloak.</li>
+				<li class="tweak">Walking on water cloaked as a predator also causes cooldown.</li>
+				<li class="tweak">Increased underbarrel extinguisher capacity to 60.</li>
+				<li class="tweak">CHUNK bar force from 10 to 15, throwforce 10.</li>
+				<li class="rscdel">Extra construction skill no longer thirds welding time or building time. Attempting to fix a barricade at less than engineer skill takes twice as long.</li>
+				<li class="rscdel">Extra construction skill no longer thirds welding time. Attempting to fix a barricade at less than engineer skill takes twice as long.</li>
+			</ul>
+			<h3 class="author">Carnage0681 updated:</h3>
+			<ul class="changes bgimages16">
+				<li class="tweak">Acid Runner health increased to 330, from 230.</li>
+			</ul>
+			<h3 class="author">Firartix updated:</h3>
+			<ul class="changes bgimages16">
+				<li class="rscadd">Added default classic keybindings based on previous CM13 keybinds</li>
+				<li class="tweak">Typing indicator was modified to allow for original faster client-side handling - it will now display the typing bubble for 5 seconds regarldess of prompt being open.</li>
+				<li class="tweak">Removed skin Hotkey Toggle as it conflicts with new system's Hotkey Mode</li>
+				<li class="tweak">Added Quick Equip Keybind, renamed previous ones to Unholster</li>
+				<li class="tweak">Reworded several input related configuration entries for clarity</li>
+				<li class="tweak">Input preferences now have their own section in character setup</li>
+				<li class="bugfix">Hotkeys Mode setting should now save properly</li>
+				<li class="bugfix">Removed leftover handler for old Swap Hand macro</li>
+				<li class="bugfix">An empty list of keys in classic keys will not use hotkeys keys as default anymore</li>
+				<li class="tweak">Optimized various aspects of the CI Pipeline</li>
+				<li class="tweak">Pinned linux rustg library dependency in repository to match Windows one</li>
+			</ul>
+			<h3 class="author">Segrain updated:</h3>
+			<ul class="changes bgimages16">
+				<li class="bugfix">Admins' mass teleport no longer breaks future bioscans.</li>
+			</ul>
+			<h3 class="author">Vanagandr updated:</h3>
+			<ul class="changes bgimages16">
+				<li class="tweak">Removed attack_speed delay when clicking one item with another when in storage (backpacks pouches etc.). Delay varied based on attacking item.</li>
+				<li class="tweak">Reduced delay when putting items on tables/racks. Delay varied based on item, is now 0.2 seconds.</li>
+				<li class="tweak">Removed extra delay when picking up an item not in first-layer inventory (in backpack, on table, on floor etc.). Total delay was 0.6 seconds, is now 0.2. The pickup verb 0.8 second delay was not changed.</li>
+				<li class="tweak">Removed extra delay when clicking things in inventory with an open hand. If an item in pocket, clothing, opening a pouch etc. total delay was 0.05 seconds, now 0; if drawing item from fast-draw toggled pouches etc. total delay was 0.25 seconds, is now 0.2.</li>
+				<li class="bugfix">Clicking the inventory spacers in slotless storage items (satchels, backpacks, some boxes) now behaves exactly the same as clicking the item sprites directly. With the item-removal click delays now 0.2s across the board, the main effect of this is that you can't pull things (M15...) out of your satchel while resting or in a xeno stomach.</li>
+				<li class="bugfix">Can't attempt to throw stuff at objects inside storage items anymore.</li>
+				<li class="bugfix">Updated mob/../carbon attackhand to add the attack delay to the *attacker* rather than the victim. Originally they all had this code but humans and xenos were updated to their current state while /carbon was left unchanged. Being punched/disarmed should no longer add action delay to you. Note that this is for human -> human or human -> xeno attacks with an open hand; this had nothing to do with xeno -> human attacks.</li>
+			</ul>
+
+			<h2 class="date">24 March 2021</h2>
+			<h3 class="author">Firartix updated:</h3>
+			<ul class="changes bgimages16">
+				<li class="tweak">Refactored part of boiler code to improve on cleanup and deletions.</li>
+				<li class="bugfix">Boiler traps should not be able to freeze dead people forever anymore.</li>
+				<li class="bugfix">Boiler traps should not clear other sources of freezing anymore (as much as our effects allow, at least)</li>
+				<li class="bugfix">add overlooked say wrapper for ssinput (typing indicator)</li>
+			</ul>
+			<h3 class="author">Nivrak updated:</h3>
+			<ul class="changes bgimages16">
+				<li class="rscadd">Health analyzers now store their last scan.</li>
+			</ul>
+			<h3 class="author">Segrain updated:</h3>
+			<ul class="changes bgimages16">
+				<li class="bugfix">Xenos once again can use Rest action button to stand up from resting.</li>
+				<li class="bugfix">Burrowers no longer can burrow into space. At all.</li>
+			</ul>
+			<h3 class="author">Waltermeldron updated:</h3>
+			<ul class="changes bgimages16">
+				<li class="bugfix">Fixed the pain lingering around after rejuv implant being proc'd.</li>
+				<li class="bugfix">Fixed armour plates not properly unregistering their signals from the wearer.</li>
+			</ul>
+
+			<h2 class="date">23 March 2021</h2>
+			<h3 class="author">Carlarc updated:</h3>
+			<ul class="changes bgimages16">
+				<li class="rscadd">Added a new loadout: 'Santa', he's a VADM with lots of gifts and a explosive-loaded mateba.</li>
+				<li class="rscadd">Added a new loadout: 'Ivan', he's an UPP Armsmaster with 31 guns, 60 magazines, and the skill and permissions to use all of them.</li>
+				<li class="tweak">Added a new adminspawn mateba speedloader that's explosive and gibs on execution.</li>
+				<li class="tweak">M60 has full ROF and can shoot non-burst.</li>
+			</ul>
+			<h3 class="author">Firartix updated:</h3>
+			<ul class="changes bgimages16">
+				<li class="bugfix">make injectors & health analyzer NOBLUDGEON, fixing some interactions around them</li>
+			</ul>
+			<h3 class="author">Firatix updated:</h3>
+			<ul class="changes bgimages16">
+				<li class="bugfix">fix tgui zombie window closing being disabled</li>
+			</ul>
+			<h3 class="author">Sigil updated:</h3>
+			<ul class="changes bgimages16">
+				<li class="rscadd">Added a bunch of admin spawned versions of standard weapons that come preloaded with rubber bullets. Also a vendor with them and some crates.</li>
+				<li class="rscadd">Added a new shrapnel subtype: rubber pellets. Doesn't damage you or give shrapnel, instead deals stamina damage like rubber bullets.</li>
+				<li class="rscadd">Added a rubber pellet M15 grenade. Can be found in the aforementioned vendor and crates.</li>
+			</ul>
+			<h3 class="author">Waltermeldron updated:</h3>
+			<ul class="changes bgimages16">
+				<li class="rscadd">Added statistics to each tech, allowing you to view their stats/items.</li>
+				<li class="tweak">Switched positionings of the tgui list input confirm/cancel buttons.</li>
+				<li class="bugfix">Fixed observers being unable to see purchased techs.</li>
+			</ul>
+			<h3 class="author">optimisticdude updated:</h3>
+			<ul class="changes bgimages16">
+				<li class="rscadd">Adds basic code for bolt action rifles, for whatever reason. This is for an externally reloaded bolt action, so no stripper clips or feeding individual bullets, go code a shotgun to do that!</li>
+				<li class="imageadd">Added four edited sprites of the CLF sniper for bolt action references.</li>
+				<li class="soundadd">Adds two sounds for bolt action-based effects, and a firing sound for the bolt action.</li>
+				<li class="rscadd">Credit to Alardun for fixing and polishing the first draft of the code.</li>
+			</ul>
+
+			<h2 class="date">22 March 2021</h2>
+			<h3 class="author">BIgboyyo updated:</h3>
+			<ul class="changes bgimages16">
+				<li class="bugfix">Changed Synthvivor slowdown to be inbetween medium and light armor, as was intended.</li>
+			</ul>
+			<h3 class="author">Firartix updated:</h3>
+			<ul class="changes bgimages16">
+				<li class="bugfix">Fixed an issue with incremental changelog generation in CI</li>
+				<li class="bugfix">Rolled back and regenerated changelog due to a MR accidentally breaking it</li>
+			</ul>
+			<h3 class="author">Nanu updated:</h3>
+			<ul class="changes bgimages16">
+				<li class="maptweak">Fixes Vehicles being able to enter Caves on Big Red.</li>
+			</ul>
+			<h3 class="author">Segrain updated:</h3>
+			<ul class="changes bgimages16">
+				<li class="bugfix">Mines once again can be triggered by nonhumans.</li>
+			</ul>
+			<h3 class="author">WalterMeldron updated:</h3>
+			<ul class="changes bgimages16">
+				<li class="tweak">Changed queen age timer from 15 minutes to 10 minutes</li>
+				<li class="rscadd">Re-added back a 5 minute timer for another Queen to evolve.</li>
+			</ul>
+			<h3 class="author">Waltermeldron updated:</h3>
+			<ul class="changes bgimages16">
+				<li class="bugfix">Fixed IMP mount working whilst dead.</li>
+				<li class="rscdel">Removed the pillgun from the medic CZSP.</li>
+				<li class="rscadd">Added an upgraded defibrillator to the medic CZSP which works through armour, heals more damage and deals no heart damage.</li>
+				<li class="tweak">You will now get forced into your body when you get revived.</li>
+				<li class="tweak">You can now revive people who are DNR (no soul). They'll still be potatoes but this allows you to cryo them.</li>
+				<li class="tweak">Changed the splint stack from 3 to 5. Indestructible splints can now be recollected.</li>
+				<li class="tweak">You can now pull submissive xenos.</li>
+				<li class="tweak">Submissive xenos no longer require a handler to be allied to the marines.</li>
+				<li class="bugfix">Fixed corrupted and submissive xenos not understanding english.</li>
+				<li class="tweak">Increased upgraded burn/brute kit stacks from 6 to 10. Upgraded burn/brute kits can now be purchased by requisitions for points once the tech is unlocked.</li>
+				<li class="tweak">Changed the ceramic plate to ignore slash damage and acid projectiles. The ceramic plate has been changed to be very durable against regular marine bullets and can last a lot longer than metal plates when it comes to resisting bullets, making it a useful tool to prevent friendly fire. It does not last forever.</li>
+				<li class="tweak">The NVG implant becomes ineffective after you die 2 times with it implanted.</li>
+				<li class="tweak">Buffed the self-revive implant significantly. It will now activate whenever you are supposed to enter crit and completely heal all damages (not including bonebreaks and organ damage). It has been renamed to Rejuvenation Implant.</li>
+				<li class="tweak">Endurance stimulant has been changed to a 1-use autoinjector that injects 5u into your body. It has been buffed to immediately heal all organ damage and bone breaks, whilst making you immune to any further organ damage/bonebreaks for an additional 5 minutes. It also still has muscle-stimulating and nerve-stimulating (albeit nerfed), as well as immense painkilling. It has been renamed to redemption stimulant. The OD threshold has been changed to 5u.</li>
+				<li class="tweak">Subdermal implant is no longer a 25% damage reduction boost. Instead, it now reduces burn damage by 10% and brute damage by 15% and reduces the chances of bone breaks by 75%</li>
+			</ul>
+
+			<h2 class="date">21 March 2021</h2>
+			<h3 class="author">Carlarc updated:</h3>
+			<ul class="changes bgimages16">
+				<li class="rscadd">(Re?) Added lipstick. You can't get it anywhere for now.</li>
+				<li class="tweak">RTO armor and uniform's IO references have been purged.</li>
+				<li class="bugfix">Fixed RTO gloves being unarmored. Fixed RTO uniform's inability to roll up its sleeves.</li>
+				<li class="tweak">RTO armor now has a slightly increased light radius, from 6 to 7.</li>
+				<li class="tweak">Scouts no longer need their helmet to put on their cloak.</li>
+				<li class="rscadd">(Re?) Added lipstick. You can get it in the equipment loadout, comes in red, purple, maroon, and jade.</li>
+			</ul>
+			<h3 class="author">Segrain updated:</h3>
+			<ul class="changes bgimages16">
+				<li class="bugfix">Greater resin fruit can no longer be consumed several times at once.</li>
+			</ul>
+			<h3 class="author">Waltermeldron updated:</h3>
+			<ul class="changes bgimages16">
+				<li class="bugfix">Fixed being unable to deploy flags and bell towers near other sentries.</li>
+				<li class="bugfix">Fixed hold order being ridiculously strong on warbanner flags.</li>
+				<li class="bugfix">Fixed warbanner flags stacking on themselves.</li>
+				<li class="bugfix">Fixed stacking sentries very close to each other</li>
+				<li class="bugfix">Fixed queens being unable to remotely build.</li>
+				<li class="bugfix">Fixed a href exploit.</li>
+			</ul>
+			<h3 class="author">naut updated:</h3>
+			<ul class="changes bgimages16">
+				<li class="bugfix">M46C no longer locks itself when vended to a CO who latejoined.</li>
+				<li class="tweak">M46C now registers itself to the first person to pick up the weapon when it is spawned. ID lock was maintained.</li>
+				<li class="tweak">M46C now accepts enhanced ammunition provided by techwebs.</li>
+			</ul>
+
+			<h2 class="date">20 March 2021</h2>
+			<h3 class="author">Firartix updated:</h3>
+			<ul class="changes bgimages16">
+				<li class="bugfix">remove a duplicated movement handler notably for holograms</li>
+			</ul>
+			<h3 class="author">Segrain updated:</h3>
+			<ul class="changes bgimages16">
+				<li class="bugfix">Vendors failing to vend no longer get stuck on the icon for denial.</li>
+				<li class="bugfix">Overwatch consoles no longer can transfer marines into nonexistent squad.</li>
+			</ul>
+			<h3 class="author">Snakebittenn updated:</h3>
+			<ul class="changes bgimages16">
+				<li class="rscadd">Armbrace now gives the accuracy and recoil of a two-handed, recoil-compensated SMG in only one hand. Reduces your burst to two shots. Removed the fire delay nerf. However, the armbrace only benefits when it's activated.</li>
+			</ul>
+			<h3 class="author">Triiodine updated:</h3>
+			<ul class="changes bgimages16">
+				<li class="bugfix">Wall-blended cargo vendors will no longer change sprites to their default after vending.</li>
+				<li class="bugfix">Wall-blended cargo vendors will no longer disappear while vending items.</li>
+			</ul>
+			<h3 class="author">Waltermeldron updated:</h3>
+			<ul class="changes bgimages16">
+				<li class="bugfix">Fixed the hive status colour scheme.</li>
+				<li class="rscadd">Xenos no longer cycle through the structure they want to build. They can now open up a menu to select which resin structure to build. There is a compact mode to decrease the size it takes up.</li>
+				<li class="bugfix">Fixed CTRL R not working for the keybinds menu.</li>
+				<li class="bugfix">Fixed a critical href exploit.</li>
+			</ul>
+
+			<h2 class="date">19 March 2021</h2>
+			<h3 class="author">Carlarc updated:</h3>
+			<ul class="changes bgimages16">
+				<li class="bugfix">Fixed marines and xenos instantly vaulting over cades.</li>
+				<li class="bugfix">Fixed survivor pouch pill packet not being reinsertable.</li>
+				<li class="bugfix">Slightly increased amount of keypresses needed on a tick before being kicked, should help with lagspikes.</li>
+			</ul>
+			<h3 class="author">SpartanBobby updated:</h3>
+			<ul class="changes bgimages16">
+				<li class="bugfix">Fixes missing iconstate for pistol bullet prop in delta bunks</li>
+			</ul>
+
+			<h2 class="date">18 March 2021</h2>
+			<h3 class="author">Carlarc updated:</h3>
+			<ul class="changes bgimages16">
+				<li class="tweak">Refactored handful code to be less agonizing to coexist in the same universe with. This has no impact on the game but allows for the ability to make different bullet amounts (Like shell items with maximum 4 rounds or even 10)</li>
+				<li class="rscadd">Marines on stimulants shake around as a visual indicator.</li>
+				<li class="rscadd">Agility implants now let you climb onto structures quickly.</li>
+				<li class="rscadd">Agility implants now let you quickly fireman carry. To do that, aggressive grab, then drag their sprite onto yours.</li>
+				<li class="tweak">You get some cool flavor when implanting now, and you can click on the implanter inhand to automatically implant.</li>
+				<li class="bugfix">Fixed the action button for attachments.</li>
+			</ul>
+
+			<h2 class="date">17 March 2021</h2>
+			<h3 class="author">Firartix updated:</h3>
+			<ul class="changes bgimages16">
+				<li class="tweak">disabled usage of costly_icon2html in statpanel icons causing freezes, notably when viewing mobs</li>
+			</ul>
+			<h3 class="author">naut updated:</h3>
+			<ul class="changes bgimages16">
+				<li class="maptweak">Added in CO weapons vendor to the CO's office, changed location of locker.</li>
+				<li class="maptweak">CIC's glass double doors on the surrounding corridors have been changed to require cic_exterior access and were given proper names.</li>
+				<li class="maptweak">Removed nonfunctional lights on the lifeboats.</li>
+				<li class="maptweak">Removed equipment in the CO's armory safe. Use it for storage now instead.</li>
+				<li class="maptweak">Replaced two small light fixtures in the Synth closet with two large ones for better illumination and removed the stain on the floor. QOL stuff.</li>
+				<li class="maptweak">Particle cannon system rooms flanking the CIC each now feature a railgun control center complete with a telephone, railgun computer (unlocked with railgun tech), and map table.</li>
+				<li class="maptweak">Added a missing light in the CIC that led to a dark spot.</li>
+				<li class="maptweak">Adds a telephone to the CO's office and to the kitchen.</li>
+			</ul>
+
+			<h2 class="date">16 March 2021</h2>
+			<h3 class="author">Firartix updated:</h3>
+			<ul class="changes bgimages16">
+				<li class="bugfix">fix global ooc color toggle</li>
+			</ul>
+			<h3 class="author">Vanagandr updated:</h3>
+			<ul class="changes bgimages16">
+				<li class="bugfix">Souto Man's belt now updates its sprite as he removes cans from it.</li>
+				<li class="bugfix">The legs of the Soutomobile's driver are now visible as intended.</li>
+				<li class="tweak">Soutomobile now slower - bit slower than a heavy armour marine. Nevertheless, there is no escape.</li>
+				<li class="rscadd">new super Soutomobile: factionlocked to Souto Man alone. Indestructible, for what is Souto may never die.</li>
+			</ul>
+			<h3 class="author">Waltermeldron updated:</h3>
+			<ul class="changes bgimages16">
+				<li class="tweak">Xenomorph powerups of previous tiers are no longer locked after unlocking the next tier level.</li>
+				<li class="tweak">Increased RTO engineering and construction to level 2 again, to be more in line with the SL.</li>
+				<li class="tweak">RTO now gets big text in their squad channel, however, the aRTO does not. both RTO roles get big text in the JTAC channel. They do not get big text anywhere else.</li>
+				<li class="tweak">aRTO will now appear as "aRTO" over comms.</li>
+				<li class="rscadd">Adds keybinds that people can configure in their character settings.</li>
+				<li class="rscadd">Adds passthrough for most tgui panels.</li>
+				<li class="tweak">Moved Edit Characters to the OOC tab, from the Ghost tab. You may now edit characters at any time, thus allowing you to modify your keybinds at any time.</li>
+			</ul>
+
+			<h2 class="date">15 March 2021</h2>
+			<h3 class="author">BIgboyyo updated:</h3>
+			<ul class="changes bgimages16">
+				<li class="maptweak">Added a bit more buckshot to LV around the engineering and LZ1 area.</li>
+				<li class="maptweak">Put some welding goggles in engineering on LV.</li>
+				<li class="maptweak">Removed weird cave walls in Central Caves that blocked a flank.</li>
+			</ul>
+			<h3 class="author">Carlarc updated:</h3>
+			<ul class="changes bgimages16">
+				<li class="rscadd">Predator hardcrit has been reintroduced. They have gained 50 health in compensation. Unlike marines, they will not die from dragging, throwing, or devouring.</li>
+				<li class="tweak">You can now target Predators and Synthetics with lunge.</li>
+			</ul>
+			<h3 class="author">ChainsawMullet updated:</h3>
+			<ul class="changes bgimages16">
+				<li class="rscadd">Added a new spear subtype, the hunter spear</li>
+				<li class="rscadd">Hunter spears have a new sprite, and have less force than normal spears.</li>
+				<li class="maptweak">Changed the spears on the hunter ship to the new spear variant</li>
+				<li class="tweak">Combi-Stick sprite slightly changed to have 2 tips.</li>
+			</ul>
+			<h3 class="author">Firartix updated:</h3>
+			<ul class="changes bgimages16">
+				<li class="tweak">Removed debug logs for Techwebs processing, Xeno ability cooldown, and Database Vending stats - as the later two, while indicative of real issues, are not actually informative and draw away attention from other ones</li>
+				<li class="tweak">Added debug logs for icon generation due to recurrent recent overtime issues</li>
+				<li class="bugfix">add some missing SIGNAL_HANDLER-s throughout codebase</li>
+			</ul>
+
+			<h2 class="date">14 March 2021</h2>
+			<h3 class="author">Carlarc updated:</h3>
+			<ul class="changes bgimages16">
+				<li class="rscadd">Added sheet sprites for amount of sheets in a stack. Credits to Nauticall!</li>
+				<li class="rscadd">Removed the beyond-limit extra 10 metal sheets survivors spawn with. Instead, they get a tricord pill packet and the gauze they start with has a full stack.</li>
+				<li class="rscadd">Added the Classic Cigar in custom loadout, which uses the classic sprite and lasts twice as long.</li>
+			</ul>
+			<h3 class="author">Sigil updated:</h3>
+			<ul class="changes bgimages16">
+				<li class="rscadd">JTAC is now a separate skill from leadership. All roles except RTO with leadership have it set to the same level for now.</li>
+				<li class="rscadd">RTO changes below:</li>
+				<li class="tweak">RTO construction and engineering is now 1 instead of 2.</li>
+				<li class="tweak">RTO leadership decreased to 1, same as all non-PFC squad roles, therefore they can no longer give order buffs without being aSL.</li>
+				<li class="tweak">JTAC skill is at previous leadership level of 2.</li>
+				<li class="tweak">RTOs now get a laser designator in their vendor.</li>
+				<li class="tweak">RTOs now have their own headset. It has access to JTAC and req comms.</li>
+			</ul>
+			<h3 class="author">Waltermeldron updated:</h3>
+			<ul class="changes bgimages16">
+				<li class="bugfix">Fixed wall-piercing ammo not going through walls.</li>
+				<li class="rscadd">Ports tgui 4.3</li>
+			</ul>
+
+			<h2 class="date">13 March 2021</h2>
+			<h3 class="author">Firartix updated:</h3>
+			<ul class="changes bgimages16">
+				<li class="bugfix">fixed techwebs-induced typo in igniter assemblies rendering them unable to be triggered</li>
+				<li class="bugfix">fixed a typo with chemical explosions damage source</li>
+				<li class="bugfix">fixed incorrect forceMove usage in C4 causing errors</li>
+			</ul>
+			<h3 class="author">Nanu updated:</h3>
+			<ul class="changes bgimages16">
+				<li class="rscadd">Added another falloff type, Exponential half.</li>
+				<li class="tweak">Tweaked the damage and falloff type of the M12 Blast Grenade.</li>
+				<li class="tweak">Changed the PMC Leader to start with thge Mk2 Rifle instead of the FP9000</li>
+				<li class="tweak">Gave the PMC Leader an M12 Blast Grenade.</li>
+			</ul>
+			<h3 class="author">Segrain updated:</h3>
+			<ul class="changes bgimages16">
+				<li class="bugfix">RTOs are now properly listed on overwatch's squad monitor.</li>
+				<li class="bugfix">M3-VL ballistic vests now can actually be worn by anybody regardless of uniform.</li>
+				<li class="bugfix">CL's ability to raise research clearance now scales with techtree progress as intended..</li>
+			</ul>
+			<h3 class="author">forest2001 updated:</h3>
+			<ul class="changes bgimages16">
+				<li class="tweak">Hunting Traps no longer stun when stepped on.</li>
+				<li class="tweak">Xenos now emote for help when they step on traps, to fit with Humans screaming.</li>
+			</ul>
+
+			<h2 class="date">12 March 2021</h2>
+			<h3 class="author">Carlarc updated:</h3>
+			<ul class="changes bgimages16">
+				<li class="rscadd">Orange juice's description now states whether it has pulp or not.</li>
+				<li class="bugfix">Oppressors can no longer cancel their abduct free of cost by resting.</li>
+				<li class="bugfix">Fixed bug where Oppressor unbuffed punching someone dealt no damage.</li>
+				<li class="rscadd">Removed ability to pick tank roundstart. Tank will still be available via T3 purchase.</li>
+				<li class="tweak">Ashtrays no longer randomize their starting position.</li>
+				<li class="rscadd">Punches of any kind no longer stun nor have damage variance. This is meant to facilitate duels, and reduce randomness in combat.</li>
+				<li class="rscadd">Predator/Synthetic/Human Hero punches deal 10 damage, humans 5.</li>
+				<li class="rscadd">Melee can no longer miss, ever.</li>
+				<li class="rscadd">Seriously that code was so fucking bad. Ho-ly shit.</li>
+			</ul>
+			<h3 class="author">Firartix updated:</h3>
+			<ul class="changes bgimages16">
+				<li class="bugfix">fix mistake in pathing for CI map rendering</li>
+			</ul>
+			<h3 class="author">Nanu updated:</h3>
+			<ul class="changes bgimages16">
+				<li class="maptweak">Fixes Almayer Mapping Items that got removed with agents</li>
+			</ul>
+			<h3 class="author">Segrain updated:</h3>
+			<ul class="changes bgimages16">
+				<li class="bugfix">Shooting walls once again does damage to them.</li>
+				<li class="spellcheck">Ghosts' Jump to Mob and Teleport verbs are renamed to Teleport to Mob and Teleport to Area.</li>
+			</ul>
+			<h3 class="author">SpartanBobby updated:</h3>
+			<ul class="changes bgimages16">
+				<li class="bugfix">Fixes unintended hugger protection on bear belt bedsheet and ushanka</li>
+				<li class="bugfix">removes colony cameras from TV set in R&R and delta bunks</li>
+				<li class="bugfix">fixes missing floortile</li>
+				<li class="bugfix">fixes wrong intercom in DS control bubble</li>
+				<li class="tweak">moves 30mm ammo crates to be less in the way of bravo briefing</li>
+				<li class="tweak">moved hangar briefing a little more south to give POs space to reload</li>
+				<li class="tweak">replaced prop GAU ammo with crates</li>
+				<li class="maptweak">floor lattice in hangar, R&R and alpha/bravo extended bunks should now be wrenched</li>
+			</ul>
+			<h3 class="author">Triiodine updated:</h3>
+			<ul class="changes bgimages16">
+				<li class="soundadd">Ceramic and metal plates now play a sound effect when they break. This goes along with the existing chat message. Keep an ear out.</li>
+			</ul>
+			<h3 class="author">forest2001 updated:</h3>
+			<ul class="changes bgimages16">
+				<li class="tweak">Changed some staff logs to send to appropriate people.</li>
+				<li class="tweak">Changed the loyalty lockbox in CLs office to contain Mod88 AP and Rubber ammo. This is because the loyalty implants are non-binding and are only relic holdovers which cause confusion for players.</li>
+				<li class="wip">The above is a temporary fix due to mapfreeze. The lockbox will be repathed to indicate it's contents, and I'll look at making a better "loyalty lockbox"</li>
+				<li class="tweak">Let mods spawn cookies for prayers</li>
+			</ul>
+			<h3 class="author">optimisticdude updated:</h3>
+			<ul class="changes bgimages16">
+				<li class="tweak">Reduces M2C falloff from 6 tiles to 4.</li>
+				<li class="tweak">Increases M2C range from 12 to 14 tiles.</li>
+				<li class="tweak">Reduces M2C effective range from 8 to 7 tiles.</li>
+				<li class="tweak">Increases M2C accuracy from 30 to 40.</li>
+				<li class="tweak">M2C at a fixed state is now acidable when undeployed.</li>
+			</ul>
+			<h3 class="author">spookydonut updated:</h3>
+			<ul class="changes bgimages16">
+				<li class="rscdel">Removed agents</li>
+			</ul>
+
+			<h2 class="date">11 March 2021</h2>
+			<h3 class="author">BIgboyyo updated:</h3>
+			<ul class="changes bgimages16">
+				<li class="maptweak">Huntership now has shutters and buttons to operate them instead of consoles that don't work.</li>
+			</ul>
+			<h3 class="author">Carlarc updated:</h3>
+			<ul class="changes bgimages16">
+				<li class="rscadd">Survivor snowcoat can hold guns now.</li>
+				<li class="bugfix">Fixed acid spits and the like using laser resistance rather than bio resistance on armor. (Usually was the same anyways)</li>
+			</ul>
+			<h3 class="author">Nivrak updated:</h3>
+			<ul class="changes bgimages16">
+				<li class="tweak">Muscle stimulating chemical property now updates dragging speed.</li>
+			</ul>
+			<h3 class="author">Sigil updated:</h3>
+			<ul class="changes bgimages16">
+				<li class="rscadd">Added toxic, incendiary and wall-piercing mags to the mk1, mod88, VP and the m44.</li>
+				<li class="imageadd">Added sprites for the above mags. Except mod88. Those were already in.</li>
+			</ul>
+			<h3 class="author">Spartanbobby updated:</h3>
+			<ul class="changes bgimages16">
+				<li class="rscadd">Added some detail to the USS almayer</li>
+				<li class="bugfix">Fixed some missing walls and pipe layer issues</li>
+				<li class="bugfix">Re-added telephones to the CIC (and overwatch consoles), the CL's office, and the CMO's office.</li>
+				<li class="bugfix">Re-added the techwebs transfer computers to the CIC.</li>
+				<li class="bugfix">Fixed some table layering issues in the CIC.</li>
+				<li class="maptweak">Added a phone to the CE's and R&D office.</li>
+			</ul>
+			<h3 class="author">Triiodine updated:</h3>
+			<ul class="changes bgimages16">
+				<li class="maptweak">Remodeled the entirety of the top deck of the Almayer in advance of the lifeboats hijack system. More space, no purpose. Keep an eye out for goodies in maintenance agents, MTs, MPs.</li>
+				<li class="imageadd">Finally made the subtypes of comfy chairs have different sprites instead of color shifts.</li>
+				<li class="imageadd">Added some new Svestapol-styled reinforced tables to the Almayer.</li>
+				<li class="imagedel">Removed an unsightly pattern from the Almayer's area icons.</li>
+				<li class="maptweak">Redecorated large swathes of the Almayer and expanded maintenance on the top deck.</li>
+				<li class="maptweak">Integrated the requisition vendors into the wall. New sprites included!</li>
+				<li class="maptweak">Replaced all the wood floors on the Almayer with faux-wooden flooring. Got that fire hazard cleaned up.</li>
+				<li class="maptweak">Removed win-doors from the Almayer firing ranges. They just got in the way of things really.</li>
+				<li class="maptweak">Deprecated the Intelligence Officer areas. The drydock at Io has sent us notice that they'll be renovating the area soon.</li>
+				<li class="maptweak">All maintenance doors (Save for the CL, Engineering, and the OT workshop, and PO hangar office), have had their access requirements removed.</li>
+				<li class="rscadd">Replaced all instances of ballistic vests on the Almayer with M3-VL pattern ballistic rigs. Same stats, but now with a suit light and magnetic harness compatibility (they still suck though).</li>
+				<li class="rscadd">Gave the Ordance Techs more buckets and 4 M3-VL armor sets in an emergency locker in their office. The buckets are on the racks next to the locker.</li>
+				<li class="bugfix">Added a missing engine icon state.</li>
+				<li class="bugfix">Corner platform sprites will now appear above actual platforms. Mappers rejoice.</li>
+				<li class="bugfix">Removed a dead pixel from dropship seat directions.</li>
+				<li class="rscdel">Removed the self destruct system from the Almayer.</li>
+				<li class="experiment">Converts medbay and DS access to strings instead of lists.</li>
+				<li class="maptweak">Medbay is no longer medical staff only. Rejoice marines.</li>
+			</ul>
+			<h3 class="author">Waltermeldron updated:</h3>
+			<ul class="changes bgimages16">
+				<li class="rscadd">Adds cryo marines as a repeatable tech that increases by 10 points per purchase. Starts at 10 points.</li>
+				<li class="rscadd">Adds a way for admins to call down droppods with items of their choosing.</li>
+				<li class="bugfix">Fixed marines being unable to purchase repeatables once they unlock 3 or more techs from their current tier.</li>
+			</ul>
+			<h3 class="author">forest2001 updated:</h3>
+			<ul class="changes bgimages16">
+				<li class="tweak">Removed roundstart mateba from COs.</li>
+			</ul>
+
+			<h2 class="date">10 March 2021</h2>
+			<h3 class="author">Carlarc updated:</h3>
+			<ul class="changes bgimages16">
+				<li class="rscadd">Survivor starting number is now readied players divided by 10.</li>
+				<li class="rscadd">Slugs have been reworked slightly.</li>
+				<li class="tweak">Slug maximum range is now 8 from 16. Accurate and stun range is 6 from 12.</li>
+				<li class="tweak">Slugs no longer daze or debuff T3s at all, instead, they have gained almost double damage and increased penetration.</li>
+				<li class="tweak">Removed miniscope from the HG, MOU53, and M39 as they are counter to the weapon's design.</li>
+				<li class="tweak">The reasoning behind these changes is that slugs are an unfun weapon to fight and they heavily shut down and can in fact stunlock T2s and T1s, primarily warriors and spitters, in a 1v1 and lock down lanes at any range, which a single marine should not be able to do with a common ammotype and weapon. This is a problem because it is one of the things stacking power onto t3s and combat queen, forcing lower tiers to sit in the back, either sidelining or waiting for evo.</li>
+				<li class="tweak">Slugs no longer daze, instead, they have gained almost double damage and increased penetration.</li>
+				<li class="tweak">The reasoning behind these changes is that slugs are an unfun weapon, they piss off xenos heavily. In addition, they heavily shut down T2s and T1s, primarily warriors and spitters, in a 1v1 and lock down lanes at any range, which a single marine should not be able to do with a common ammotype and weapon. This is a problem because it is one of the things stacking power onto t3s and combat queen, forcing lower tiers to sit in the back, either sidelining or waiting for evo, and encourages holding chokes instead of pushing out.</li>
+			</ul>
+			<h3 class="author">Firartix updated:</h3>
+			<ul class="changes bgimages16">
+				<li class="bugfix">Admin and Observer jump menus won't show duplicate lighting areas anymore.</li>
+				<li class="bugfix">remove absolutely random human creation in records code</li>
+			</ul>
+			<h3 class="author">Segrain updated:</h3>
+			<ul class="changes bgimages16">
+				<li class="bugfix">Tank is once again available only for sufficiently high population.</li>
+				<li class="bugfix">Acider Runners successfully exploding for the hive once again get free respawns.</li>
+			</ul>
+			<h3 class="author">TheDonkified updated:</h3>
+			<ul class="changes bgimages16">
+				<li class="tweak">BC no longer has a decreased damage buff for M41.</li>
+			</ul>
+			<h3 class="author">Triiodine updated:</h3>
+			<ul class="changes bgimages16">
+				<li class="bugfix">Re-added all icons that were overwritten with techwebs and reapplied techwebs icons over the resets.</li>
+				<li class="maptweak">Removed disk readers from CORSAT and Science Annex.</li>
+				<li class="imageadd">New rolled poster sprite, xeno techweb ability icons, map vote icon.</li>
+			</ul>
+			<h3 class="author">forest2001 updated:</h3>
+			<ul class="changes bgimages16">
+				<li class="rscadd">Added logs to various overwatch features</li>
+			</ul>
+			<h3 class="author">spookydonut updated:</h3>
+			<ul class="changes bgimages16">
+				<li class="rscadd">Converted vehicle elevator to use new shuttle code</li>
+			</ul>
+
+			<h2 class="date">09 March 2021</h2>
+			<h3 class="author">TheDonkified updated:</h3>
+			<ul class="changes bgimages16">
+				<li class="bugfix">Full auto works on black tiles now.</li>
+				<li class="tweak">M2C will rotate upon click now instead of requiring you to fire first.</li>
+			</ul>
+			<h3 class="author">Waltermeldron updated:</h3>
+			<ul class="changes bgimages16">
+				<li class="bugfix">Changes the bikehorn notification message to an actual sound file.</li>
+				<li class="rscadd">Adds the Xenomorph and Marine techtree. Xenomorphs can enter through the verb in their alien tab called "Enter Tech Tree" and marines can enter through the verb in their "Objects" tab.</li>
+				<li class="rscadd">Each techtree has 3 tiers. Marines get 3 different permanent techs per tier and some repeatable techs that can be purchased multiple times (req points/OBs). Xenos get 2 different permanent techs and 2 different powerups each tier. Powerups can be purchased multiple times to provide different temporary/limited use abilities and effects.</li>
+				<li class="rscadd">The tech tree controller for the marine side is chosen randomly between the CO/XO. The controller can choose to hand this power to the other side if they so choose using the tech management console in CIC. They cannot be forced to give up this power and additionally cannot be forced to purchase any techs if the controller is either the CO/XO. If someone else is in control of techwebs, a person of a higher ranking may take over by going to this console and using it. Leaving the almayer z-level will result in the person in control of techwebs to lose their control - You must be on the Almayer z-level to control techwebs.</li>
+				<li class="rscadd">Adds a new role called RT Operator. This is a squad role and there is 2 per squad. The assistant RTO is the second RTO in a squad to spawn in. The squad lead succession operates as so; SL -> RTO -> Assistant RTO</li>
+				<li class="rscadd">Added telephones. RTOs get a portable telephone on their backpack.</li>
+				<li class="rscadd">Added droppods. Drop pods are a way of distributing techs. More drop pods (manned drop pod, etc) may be added in the future with this change. RTOs can call down any tech drop pods. Drop pods will gib anything they land on.</li>
+			</ul>
+
+			<h2 class="date">05 March 2021</h2>
+			<h3 class="author">Segrain updated:</h3>
+			<ul class="changes bgimages16">
+				<li class="bugfix">Firesuits and spacesuits no longer grant unintended immunity to pounces.</li>
+			</ul>
+
+			<h2 class="date">04 March 2021</h2>
+			<h3 class="author">Firartix updated:</h3>
+			<ul class="changes bgimages16">
+				<li class="bugfix">Timers in mob status handling now actually delete properly instead of erroring.</li>
+			</ul>
+
+			<h2 class="date">02 March 2021</h2>
+			<h3 class="author">Firartix updated:</h3>
+			<ul class="changes bgimages16">
+				<li class="tweak">Areas now can actually have flags.</li>
+				<li class="bugfix">Fix up area flags handling that were causing issues eg. with Burrower.</li>
+				<li class="tweak">Exosuit fabricators now print robot heads that can't be used for cyborg construction.</li>
+				<li class="tweak">Robugers created from malfunctioning robot heads will not contain nanites.</li>
+				<li class="bugfix">Fixed selection menu for Overwatch Insub and Squad Transfer</li>
+			</ul>
+
+			<h2 class="date">01 March 2021</h2>
+			<h3 class="author">Waltermeldron updated:</h3>
+			<ul class="changes bgimages16">
+				<li class="rscadd">Sets up the repository to work well with deployment with docker.</li>
+			</ul>
+
+			<h2 class="date">28 February 2021</h2>
+			<h3 class="author">Firartix updated:</h3>
+			<ul class="changes bgimages16">
+				<li class="bugfix">fix potential issue with midnight rollover and brig timers</li>
+				<li class="bugfix">brig incident reports won't appear blank anymore</li>
+				<li class="bugfix">Fixed an issue with usage of config values for lobby music</li>
+				<li class="bugfix">fix random visual error with forsaken hallucination code.</li>
+			</ul>
+			<h3 class="author">Nanu updated:</h3>
+			<ul class="changes bgimages16">
+				<li class="maptweak">Fixes LZ on SciAnnex being weedable.</li>
+			</ul>
+			<h3 class="author">TheDonkified updated:</h3>
+			<ul class="changes bgimages16">
+				<li class="tweak">Ported tg's getFlatIcon proc and modified it a bit to compensate for how we use planes and how we handle human overlays.</li>
+				<li class="bugfix">Alt-click panel should now update the icon for humans when they put on new items and should display their bodies properly now.</li>
+			</ul>
+			<h3 class="author">Vanagandr updated:</h3>
+			<ul class="changes bgimages16">
+				<li class="tweak">Tidied my old hypospray code. Main things are that tactical-reloads only swap hands if moving an old vial into the inactive hand, and there's text for starting to load a vial into an empty hypo.</li>
+				<li class="bugfix">Ghosts and xenos and unconscious people can no longer toggle hypospray injection amounts, fixed hypospray tactical-reloading vials out of inventory not properly updating the storage screen.</li>
+			</ul>
+
+			<h2 class="date">27 February 2021</h2>
+			<h3 class="author">Firartix updated:</h3>
+			<ul class="changes bgimages16">
+				<li class="tweak">CI - overhauled CM GitLab CI process to hopefully be more flexible and generic</li>
+				<li class="rscadd">CI - pipeline now runs SpacemanDMM tooling for maps related tasks</li>
+				<li class="rscadd">CI - added artifact exports to most of build process</li>
+				<li class="experiment">CI - added game-running docker container task to pipeline</li>
+			</ul>
+			<h3 class="author">TheDonkified updated:</h3>
+			<ul class="changes bgimages16">
+				<li class="tweak">After clicking a link for a legacy stylesheet, it should change color to have purple text.</li>
+				<li class="bugfix">The rainbow-colored gib spawner should no longer appear when mobs are being gibbed (or machinery is being destroyed).</li>
+			</ul>
+			<h3 class="author">Waltermeldron updated:</h3>
+			<ul class="changes bgimages16">
+				<li class="bugfix">Fixed acid runners being able to suicide whilst in containment.</li>
+			</ul>
+
+			<h2 class="date">26 February 2021</h2>
+			<h3 class="author">Firartix updated:</h3>
+			<ul class="changes bgimages16">
+				<li class="bugfix">Gun I1 error has been bandaid'ed so it is not as much a pain to players as it is to people reading code</li>
+			</ul>
+			<h3 class="author">Nanu updated:</h3>
+			<ul class="changes bgimages16">
+				<li class="maptweak">Fixed walls being broken could lead to space on Prison Annex</li>
+			</ul>
+			<h3 class="author">TheDonkified updated:</h3>
+			<ul class="changes bgimages16">
+				<li class="bugfix">Fixed bug with browser links having purple text for no reason.</li>
+			</ul>
+
+			<h2 class="date">25 February 2021</h2>
+			<h3 class="author">Firartix updated:</h3>
+			<ul class="changes bgimages16">
+				<li class="bugfix">Fix conveyor switches invalid init preventing them from controlling conveyors.</li>
+			</ul>
+			<h3 class="author">Jeser updated:</h3>
+			<ul class="changes bgimages16">
+				<li class="bugfix">Fixed van's wall and doors transparency and offsets issues.</li>
+			</ul>
+			<h3 class="author">Segrain updated:</h3>
+			<ul class="changes bgimages16">
+				<li class="bugfix">ID cards (and dogtags) once again list the bearer's bloodtype.</li>
+			</ul>
+			<h3 class="author">TheDonkified updated:</h3>
+			<ul class="changes bgimages16">
+				<li class="bugfix">The "Legacy" stylesheet should work now.</li>
+				<li class="bugfix">The traits var and gear var for character preferences should no longer be able to get null elements.</li>
+			</ul>
+			<h3 class="author">Waltermeldron updated:</h3>
+			<ul class="changes bgimages16">
+				<li class="bugfix">Fixed an exploit with unicode characters.</li>
+			</ul>
+
+			<h2 class="date">24 February 2021</h2>
+			<h3 class="author">BIgboyyo updated:</h3>
+			<ul class="changes bgimages16">
+				<li class="bugfix">Synthetics now spawn in their closet as intended.</li>
+			</ul>
+			<h3 class="author">Firartix updated:</h3>
+			<ul class="changes bgimages16">
+				<li class="tweak">Tweaked wrongly intended changes to mentorhelp messaging</li>
+				<li class="bugfix">Fix a mistake in the mhelp message sending that would result in mentor also seeing each others messages</li>
+			</ul>
+			<h3 class="author">Vanagandr updated:</h3>
+			<ul class="changes bgimages16">
+				<li class="bugfix">Smartgun autofire mode now works. Specifically: if the gun is wielded and autofire toggled, it will take shots at targets that are in range and within a 135 degree arc in the direction you're facing. These aren't free bonus shots -- it respects fire delays.</li>
+				<li class="bugfix">Attaching or removing a smartgun attachment no longer resets the gun's stats to initial values. This fixes some bugs relating to recoil comp.</li>
+				<li class="bugfix">Toggling recoil comp on and off on a Terminator smartgun no longer increases its base scatter.</li>
+				<li class="bugfix">Unwielding a gun that can only be fired while wielded in the middle of a burst (ex. HPR, M4RA, smartgun) now stops the burst.</li>
+				<li class="tweak">Autofire scan range reduced to 7 tiles.</li>
+				<li class="tweak">Tidied SG code a bit.</li>
+			</ul>
+
+			<h2 class="date">23 February 2021</h2>
+			<h3 class="author">BIgboyyo updated:</h3>
+			<ul class="changes bgimages16">
+				<li class="bugfix">George no longer disappears when you scoop him up</li>
+			</ul>
+			<h3 class="author">Firartix updated:</h3>
+			<ul class="changes bgimages16">
+				<li class="tweak">base OOC Colors now use the config system</li>
+				<li class="tweak">removed get_staff_by_categories and AHOLD_IS_ONLY_MENTOR</li>
+				<li class="tweak">added CLIENT_IS_STAFF (in practice R_MOD|R_ADMIN)</li>
+				<li class="tweak">only client distinction other than individual rights should now be staff/non-staff</li>
+				<li class="tweak">Defer overwatch officer handling and messaging back to squads from the puny console</li>
+				<li class="tweak">Normalize deletion from overwatch in the ongoing war against stale references</li>
+				<li class="tweak">added a standard way to request early game start in ticker backend</li>
+				<li class="tweak">remove ticker 'start_immediately' bypassing lobby phase as unused and not properly accounted for</li>
+				<li class="bugfix">Fixed attempting to edit a 0 offset in a Fire Mission breaking it</li>
+			</ul>
+			<h3 class="author">Segrain updated:</h3>
+			<ul class="changes bgimages16">
+				<li class="bugfix">Cancelling upgrading a metal barricade no longer consumes metal.</li>
+			</ul>
+			<h3 class="author">Shikareth updated:</h3>
+			<ul class="changes bgimages16">
+				<li class="tweak">Activating signal flare enables throw mode.</li>
+			</ul>
+			<h3 class="author">Vanagandr updated:</h3>
+			<ul class="changes bgimages16">
+				<li class="bugfix">Fixes runtimes with vehicle lockers, including one which meant things could not be inserted into them at all.</li>
+			</ul>
+			<h3 class="author">forest2001 updated:</h3>
+			<ul class="changes bgimages16">
+				<li class="rscadd">Added logs to ID modifications.</li>
+				<li class="rscadd">Added an internal log on individual IDs that records any changes to them.</li>
+			</ul>
+
+			<h2 class="date">22 February 2021</h2>
+			<h3 class="author">naut updated:</h3>
+			<ul class="changes bgimages16">
+				<li class="rscadd">Resprited a few more things:</li>
+				<li class="imageadd">Hydroponics trays.</li>
+				<li class="imageadd">Matchboxes and matches.</li>
+				<li class="imageadd">Drink and booze dispensers.</li>
+			</ul>
+
+			<h2 class="date">19 February 2021</h2>
+			<h3 class="author">TheDonkified updated:</h3>
+			<ul class="changes bgimages16">
+				<li class="bugfix">The "Fix Interfaces" verb will no longer close everyone's UIs.</li>
+			</ul>
+			<h3 class="author">Triiodine updated:</h3>
+			<ul class="changes bgimages16">
+				<li class="bugfix">Replaced some reinforced walls with hull walls on Prison that allowed access to internal space areas.</li>
+				<li class="bugfix">Re-added the HEFA tome sprite.</li>
+				<li class="bugfix">Fixed the medibot's O2 kit overlay referencing the original bay12 version.</li>
+				<li class="bugfix">Fixed some impassable telephone booths on Science Annex.</li>
+				<li class="bugfix">Non-decal plants no longer have 60% chance to catch bullets passing over them, lowered to 0%.</li>
+			</ul>
+
+			<h2 class="date">18 February 2021</h2>
+			<h3 class="author">Firartix updated:</h3>
+			<ul class="changes bgimages16">
+				<li class="tweak">Regenerated Changelog from 26-01-2020 to account for missing entries</li>
+				<li class="tweak">Changelog tools now account for comment close tags, and MR merging date, rather than using current day</li>
+				<li class="bugfix">Changelog generation utility now properly paginates by last update date when reading MRs</li>
+			</ul>
+
+			<h2 class="date">17 February 2021</h2>
+			<h3 class="author">Firartix updated:</h3>
+			<ul class="changes bgimages16">
+				<li class="bugfix">Changed default project MR template comments so stupid changelog parser doesn't entirely ignore changelog entries</li>
+			</ul>
+
+			<h2 class="date">16 February 2021</h2>
+			<h3 class="author">Firartix updated:</h3>
+			<ul class="changes bgimages16">
+				<li class="bugfix">Fixed revolver catch trick being more of a meme than it should be</li>
+				<li class="tweak">Fix agents destroy logic</li>
+				<li class="bugfix">Agents objective related objects won't delete with them anymore</li>
+			</ul>
+			<h3 class="author">Firatix updated:</h3>
+			<ul class="changes bgimages16">
+				<li class="bugfix">fixed destroy logic for storages regarding mobs observing them</li>
+			</ul>
+			<h3 class="author">Segrain updated:</h3>
+			<ul class="changes bgimages16">
+				<li class="spellcheck">Berserker's apprehend ability no longer gets called "enrage".</li>
+				<li class="bugfix">Berserker locked at maximum rage no longer loses it when using clothesline ability.</li>
+				<li class="bugfix">Berserker's eviscerate ability now correctly calculates its variable attributes when used below maximum rage level.</li>
+			</ul>
+			<h3 class="author">Shikareth updated:</h3>
+			<ul class="changes bgimages16">
+				<li class="bugfix">Fixed Prison_Station_Science_Annex wiki link</li>
+			</ul>
+			<h3 class="author">TheDonkified updated:</h3>
+			<ul class="changes bgimages16">
+				<li class="tweak">Refactored facehugger code to use timers and a processing subsystem.</li>
+				<li class="tweak">Active huggers will try to infect someone every 2 seconds instead of every 5 seconds.</li>
+				<li class="bugfix">Huggers no longer die while infecting people.</li>
+				<li class="bugfix">Huggers that have infected people will show the proper sprite.</li>
+				<li class="bugfix">The hive status subsystem uses the property priority.</li>
+				<li class="bugfix">The throw speed for the carrier "Use/Throw Facehugger" ability properly fits with the speed system we have now.</li>
+			</ul>
+			<h3 class="author">TobiNerd updated:</h3>
+			<ul class="changes bgimages16">
+				<li class="bugfix">ALT clicking surfaces (tables and racks) now show contents in statpanel again.</li>
+				<li class="bugfix">Intercoms are no longer added to surfaces.</li>
+			</ul>
+
+			<h2 class="date">15 February 2021</h2>
+			<h3 class="author">Firartix updated:</h3>
+			<ul class="changes bgimages16">
+				<li class="bugfix">Fix improper deletion with tgui_list_input and tgui_alert</li>
+				<li class="bugfix">Added QDEL_REF_IN to del by timer using weakreferences, allowing GC'ing during long running timers</li>
+			</ul>
+			<h3 class="author">TheDonkified updated:</h3>
+			<ul class="changes bgimages16">
+				<li class="bugfix">Fixed a chat-breaking PMC ERT message.</li>
+				<li class="tweak">Added a to_chat sanity check to prevent issues in the future with bad message types.</li>
+			</ul>
+			<h3 class="author">Waltermeldron updated:</h3>
+			<ul class="changes bgimages16">
+				<li class="rscdel">Disables voting on XvX as it is currently broken.</li>
+			</ul>
+
+			<h2 class="date">13 February 2021</h2>
+			<h3 class="author">Carlarc updated:</h3>
+			<ul class="changes bgimages16">
+				<li class="bugfix">Added respawn timer to pooled larvae. You now have to wait the usual 5 minutes before respawning into pooled larva.</li>
+				<li class="bugfix">Admins with attack logs turned on now hear 'X has died to Y' deadchat messages.</li>
+			</ul>
+			<h3 class="author">Firartix updated:</h3>
+			<ul class="changes bgimages16">
+				<li class="bugfix">Blood created during map laoding now instantly dries to circumvent deletion issues</li>
+				<li class="bugfix">Effects scheduled on deleted objects now delete too</li>
+			</ul>
+			<h3 class="author">TheDonkified updated:</h3>
+			<ul class="changes bgimages16">
+				<li class="tweak">Some minor optimizations as well as formatting changes to lighting code.</li>
+			</ul>
+
+			<h2 class="date">12 February 2021</h2>
+			<h3 class="author">Firartix updated:</h3>
+			<ul class="changes bgimages16">
+				<li class="bugfix">fix minor logging issue with ERT calling</li>
+			</ul>
+			<h3 class="author">Segrain updated:</h3>
+			<ul class="changes bgimages16">
+				<li class="bugfix">Autoresponses for mentorhelp once again work.</li>
+			</ul>
+			<h3 class="author">Shikareth updated:</h3>
+			<ul class="changes bgimages16">
+				<li class="bugfix">Ingame maps now are displayed correctly.</li>
+			</ul>
+			<h3 class="author">forest2001 updated:</h3>
+			<ul class="changes bgimages16">
+				<li class="tweak">Fixed up the back end formatting for ERT calls</li>
+			</ul>
+
+			<h2 class="date">11 February 2021</h2>
+			<h3 class="author">Firartix updated:</h3>
+			<ul class="changes bgimages16">
+				<li class="tweak">minor perf tweak regarding airlocks</li>
+				<li class="tweak">add flag to bypass map config for testing</li>
+				<li class="bugfix">minor logging typo with laser designator</li>
+				<li class="tweak">added missing button to view TGUI logs</li>
+				<li class="tweak">Can contents do not awkwardly double-react double-drink anymore. The amount per sip was increased to compensate.</li>
+				<li class="tweak">Added an internal `/datum/reagents/vessel` that can be used to transfer reagents internally without an atom.</li>
+				<li class="tweak">Modified Reagents code to allow partial operation with datums rather than only atoms.</li>
+				<li class="bugfix">Reagent Holder, Reagents, and Chem Properties now properly clear references, allowing their deletion.</li>
+				<li class="bugfix">Reagents code change subsequently means that deleting pills or bottles allow them to be garbaged by solving the circular reference.</li>
+				<li class="bugfix">Ingesting things does not create a time-traveling invisible botomless beaker anymore.</li>
+				<li class="bugfix">The ubiquitous napalm on every human (???) will now delete with them instead of clinging them into this hellish reality.</li>
+			</ul>
+
+			<h2 class="date">10 February 2021</h2>
+			<h3 class="author">Firartix updated:</h3>
+			<ul class="changes bgimages16">
+				<li class="tweak">Refactored DEFCON corpse landmarks usage</li>
+				<li class="bugfix">Corpse landmarks are now properly removed when deleted</li>
+				<li class="bugfix">Objects placed on surfaces (tables, racks) now retain their color instead of using surface's.</li>
+				<li class="bugfix">Xenos slashing APCs may now complete Agents objectives.</li>
+				<li class="bugfix">remove invalid Van hardpoint assignment preventing its deletion</li>
+				<li class="tweak">Removed some things.</li>
+			</ul>
+			<h3 class="author">Segrain updated:</h3>
+			<ul class="changes bgimages16">
+				<li class="bugfix">MPs once again can use riot grenade launcher.</li>
+			</ul>
+			<h3 class="author">Waltermeldron updated:</h3>
+			<ul class="changes bgimages16">
+				<li class="tweak">Removed suggestions from out gitlab issue templates. Replaced with tasks.</li>
+			</ul>
+
+			<h2 class="date">09 February 2021</h2>
+			<h3 class="author">Nanu updated:</h3>
+			<ul class="changes bgimages16">
+				<li class="maptweak">New Prison - Fixes the north walls by inflateable area. Can no longer be breached.</li>
+				<li class="maptweak">New Prison - Changed Doors by Hannibal to be invincible Structures.</li>
+			</ul>
+			<h3 class="author">Segrain updated:</h3>
+			<ul class="changes bgimages16">
+				<li class="bugfix">Synthesis simulator no longer breaks upon selecting "Cancel" when setting creation's OD level.</li>
+			</ul>
+			<h3 class="author">Triiodine updated:</h3>
+			<ul class="changes bgimages16">
+				<li class="bugfix">Added missing damage states for carpets on Fiorina - Science Annex</li>
+				<li class="bugfix">Removed a space exploit at the Chapel to Yard hallway.</li>
+				<li class="bugfix">Space on Fiorina - Science Annex is now blue tinted, like the rest of the map.</li>
+			</ul>
+
+			<h2 class="date">08 February 2021</h2>
+			<h3 class="author">TheDonkified updated:</h3>
+			<ul class="changes bgimages16">
+				<li class="bugfix">Trapper can no longer ignore LOS if a target is over 10 tiles away.</li>
+			</ul>
+			<h3 class="author">Triiodine updated:</h3>
+			<ul class="changes bgimages16">
+				<li class="experiment">Renamed Prison Station to Fiorina - Cellblocks.</li>
+				<li class="rscadd">Added a new map: Fiorina - Science Annex to rotation.</li>
+				<li class="rscadd">Added numerous map props including but not limited to: Candelabras, emergency tripod lamps (in two colors!), HEFA bibles (batteries not included), structural lattice, resin coated objects, HEFA cult decals (credit Bongosz), double tube light fixtures, a 4th and somewhat needless hydroponics tray variant, prison station maintenance hatches, manually placeable carpet variants, and church pews (credit Monkeysfist101)</li>
+				<li class="imageadd">Resprited some legacy content, including but not limited to: Minecarts, trashcarts, M16 rifle, MP5 Submachine gun, food processors, gibber machines, and DEFCON spawn markers.</li>
+				<li class="rscadd">Added United American Riot Control corpse presets.</li>
+			</ul>
+
+			<h2 class="date">07 February 2021</h2>
+			<h3 class="author">TheDonkified updated:</h3>
+			<ul class="changes bgimages16">
+				<li class="bugfix">Fixes ghosts teleporting into empty space triggering a never-ending loop of qdels and message spam.</li>
+			</ul>
+			<h3 class="author">Waltermeldron updated:</h3>
+			<ul class="changes bgimages16">
+				<li class="bugfix">Fixed automated gamemode votes not working by moving it to start at the end of the round.</li>
+			</ul>
+
+			<h2 class="date">06 February 2021</h2>
+			<h3 class="author">Segrain updated:</h3>
+			<ul class="changes bgimages16">
+				<li class="bugfix">Promoted SLs now properly receive extended comms access even in case of headset being already full of keys.</li>
+				<li class="bugfix">Acting SL's radio key no longer can be duplicated by removal.</li>
+				<li class="rscadd">Headsets of all squad roles once again have access to general Almayer comms.</li>
+				<li class="bugfix">Demoted SLs (acting or otherwise) no longer keep bolded abovehead chat.</li>
+			</ul>
+			<h3 class="author">TheDonkified updated:</h3>
+			<ul class="changes bgimages16">
+				<li class="bugfix">Fixes runtime with bloody feet element.</li>
+			</ul>
+			<h3 class="author">Vanagandr updated:</h3>
+			<ul class="changes bgimages16">
+				<li class="bugfix">Toggling an M10 technician helmet no longer resets its sprite to the default green LV skin.</li>
+			</ul>
+
+			<h2 class="date">04 February 2021</h2>
+			<h3 class="author">Firartix updated:</h3>
+			<ul class="changes bgimages16">
+				<li class="tweak">updated rust-g</li>
+				<li class="bugfix">removed override for rust-g library name, allowing it to be autodetected on non-windows systems</li>
+			</ul>
+			<h3 class="author">Segrain updated:</h3>
+			<ul class="changes bgimages16">
+				<li class="bugfix">Firing M56D now makes bullets come out of the machinegun and not out of the user.</li>
+				<li class="bugfix">Deaths by projectile are once again properly attributed to original gun.</li>
+				<li class="bugfix">CTs receive their own welcoming message upon joining the round and not that of OTs.</li>
+			</ul>
+			<h3 class="author">Waltermeldron updated:</h3>
+			<ul class="changes bgimages16">
+				<li class="bugfix">Fixed the sound when playing VOX sound files to yourself.</li>
+			</ul>
+
+			<h2 class="date">03 February 2021</h2>
+			<h3 class="author">Segrain updated:</h3>
+			<ul class="changes bgimages16">
+				<li class="tweak">Smartgun's armourpiercing bullets now have a distinct name.</li>
+				<li class="bugfix">Reloading a smartgun no longer resets it out of armourpiercing mode.</li>
+				<li class="tweak">Calculations for smartgun's recoil brought in line with intended values.</li>
+			</ul>
+
+			<h2 class="date">02 February 2021</h2>
+			<h3 class="author">Carlarc updated:</h3>
+			<ul class="changes bgimages16">
+				<li class="bugfix">M43 no longer has weird unwielded sprites, and now has good wielded sprites.</li>
+				<li class="bugfix">PMC FP9K no longer has an unused item_state.</li>
+			</ul>
+			<h3 class="author">Firartix updated:</h3>
+			<ul class="changes bgimages16">
+				<li class="bugfix">fix some incorrect inherits in callbacks - this has side-effects</li>
+			</ul>
+			<h3 class="author">TheDonkified updated:</h3>
+			<ul class="changes bgimages16">
+				<li class="bugfix">Changing fontsize will properly update your stat panel window.</li>
+				<li class="bugfix">The options button in the stat panel will now stay in position when scrolling.</li>
+			</ul>
+			<h3 class="author">TotalEpicness updated:</h3>
+			<ul class="changes bgimages16">
+				<li class="bugfix">Adds a wee bit of tolerance to OT chems. This will assure that when some floating point fuckery happens, the OT lab won't explode.</li>
+			</ul>
+
+			<h2 class="date">01 February 2021</h2>
+			<h3 class="author">Firartix updated:</h3>
+			<ul class="changes bgimages16">
+				<li class="bugfix">UPP racks now have the correct kind of Automag magazines</li>
+				<li class="tweak">add missing qdel hints to various objects</li>
+			</ul>
+			<h3 class="author">Segrain updated:</h3>
+			<ul class="changes bgimages16">
+				<li class="bugfix">The rate of spawning free larvas on hijack now actually slowly grows from 1 per 90 seconds to 1 per 30 seconds at intended rate of acceleration.</li>
+			</ul>
+			<h3 class="author">TheDonkified updated:</h3>
+			<ul class="changes bgimages16">
+				<li class="bugfix">Fixes deleting default highlight settings causing a runtime.</li>
+				<li class="tweak">Default highlight settings no longer delete, instead they clear. Default highlight settings should take up the first highlight setting slot for tgchat.</li>
+				<li class="bugfix">Fixed a very niche bug that causes your stat panel to crash. Note that for some people, modifying stat panel settings will not persist across rounds. You will have to modify the font sizes (and any future settings) every round.</li>
+			</ul>
+			<h3 class="author">Vanagandr updated:</h3>
+			<ul class="changes bgimages16">
+				<li class="bugfix">Outdated DEBUG_HIT_CHANCE notifications now work. No effect on gameplay but very handy for testing.</li>
+			</ul>
+			<h3 class="author">forest2001 updated:</h3>
+			<ul class="changes bgimages16">
+				<li class="bugfix">CO has their mateba back</li>
+				<li class="bugfix">Provost Inspector and USCM Admiral have their headsets updated correctly</li>
+			</ul>
+</div>
+</body>
+</html>
