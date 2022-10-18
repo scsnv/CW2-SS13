@@ -88,7 +88,7 @@
 	access = list(ACCESS_MARINE_PREP, ACCESS_MARINE_SMARTPREP)
 	assignment = JOB_SQUAD_SMARTGUN
 	rank = JOB_SQUAD_SMARTGUN
-	paygrade = "E4"
+	paygrade = "E3"
 	role_comm_title = "SG"
 	skills = /datum/skills/smartgunner
 
@@ -137,10 +137,10 @@
 	)
 	assignment = JOB_CREWMAN
 	rank = JOB_CREWMAN
-	paygrade = "E7"
-	role_comm_title = "CRMN"
-	minimum_age = 30
-	skills = /datum/skills/tank_crew
+	paygrade = "E5"
+	role_comm_title = "SCL"
+	minimum_age = 25
+	skills = /datum/skills/SL
 
 /datum/equipment_preset/uscm/tank/load_gear(mob/living/carbon/human/H)
 	var/backItem = /obj/item/storage/backpack/marine/satchel
@@ -187,7 +187,7 @@
 	access = list(ACCESS_MARINE_PREP, ACCESS_MARINE_SPECPREP)
 	assignment = JOB_SQUAD_SPECIALIST
 	rank = JOB_SQUAD_SPECIALIST
-	paygrade = "E5"
+	paygrade = "E3"
 	role_comm_title = "Spc"
 	skills = /datum/skills/specialist
 
@@ -233,7 +233,7 @@
 	access = list(ACCESS_MARINE_PREP, ACCESS_MARINE_MEDPREP, ACCESS_MARINE_MEDBAY)
 	assignment = JOB_SQUAD_MEDIC
 	rank = JOB_SQUAD_MEDIC
-	paygrade = "E3"
+	paygrade = "E2"
 	role_comm_title = "Med"
 	skills = /datum/skills/combat_medic
 
@@ -255,7 +255,7 @@
 	access = list(ACCESS_MARINE_PREP, ACCESS_MARINE_RTO_PREP)
 	assignment = JOB_SQUAD_RTO
 	rank = JOB_SQUAD_RTO
-	paygrade = "E5"
+	paygrade = "E2"
 	role_comm_title = "RTO"
 	skills = /datum/skills/rto
 
@@ -275,7 +275,7 @@
 	access = list(ACCESS_MARINE_PREP, ACCESS_MARINE_ENGPREP, ACCESS_CIVILIAN_ENGINEERING)
 	assignment = JOB_SQUAD_ENGI
 	rank = JOB_SQUAD_ENGI
-	paygrade = "E3"
+	paygrade = "E2"
 	role_comm_title = "Eng"
 	skills = /datum/skills/combat_engineer
 
@@ -297,9 +297,9 @@
 	access = list(ACCESS_MARINE_PREP, ACCESS_MARINE_LEADER, ACCESS_MARINE_DROPSHIP)
 	assignment = JOB_SQUAD_LEADER
 	rank = JOB_SQUAD_LEADER
-	paygrade = "E6"
+	paygrade = "E4"
 	role_comm_title = "SL"
-	minimum_age = 27
+	minimum_age = 23
 	skills = /datum/skills/SL
 
 /datum/equipment_preset/uscm/leader/load_gear(mob/living/carbon/human/H)
@@ -368,9 +368,9 @@
 	access = list(ACCESS_MARINE_PREP, ACCESS_MARINE_LEADER, ACCESS_MARINE_DROPSHIP)
 	assignment = JOB_SQUAD_LEADER
 	rank = JOB_SQUAD_LEADER
-	paygrade = "E6"
+	paygrade = "E4"
 	role_comm_title = "SL"
-	minimum_age = 27
+	minimum_age = 23
 	skills = /datum/skills/SL
 
 /datum/equipment_preset/uscm/leader_equipped/load_gear(mob/living/carbon/human/H)
@@ -400,7 +400,7 @@
 	access = list(ACCESS_MARINE_PREP, ACCESS_MARINE_SMARTPREP)
 	assignment = JOB_SQUAD_SMARTGUN
 	rank = JOB_SQUAD_SMARTGUN
-	paygrade = "E4"
+	paygrade = "E3"
 	role_comm_title = "SG"
 	skills = /datum/skills/smartgunner
 
@@ -431,7 +431,7 @@
 	access = list(ACCESS_MARINE_PREP, ACCESS_MARINE_ENGPREP, ACCESS_CIVILIAN_ENGINEERING)
 	assignment = JOB_SQUAD_ENGI
 	rank = JOB_SQUAD_ENGI
-	paygrade = "E3"
+	paygrade = "E2"
 	role_comm_title = "Eng"
 	skills = /datum/skills/combat_engineer
 
@@ -470,7 +470,7 @@
 	access = list(ACCESS_MARINE_PREP, ACCESS_MARINE_MEDPREP, ACCESS_MARINE_MEDBAY)
 	assignment = JOB_SQUAD_MEDIC
 	rank = JOB_SQUAD_MEDIC
-	paygrade = "E3"
+	paygrade = "E2"
 	role_comm_title = "Med"
 	skills = /datum/skills/combat_medic
 
@@ -509,7 +509,7 @@
 	access = list(ACCESS_MARINE_PREP, ACCESS_MARINE_SPECPREP)
 	assignment = JOB_SQUAD_SPECIALIST
 	rank = JOB_SQUAD_SPECIALIST
-	paygrade = "E5"
+	paygrade = "E3"
 	role_comm_title = "Spc"
 	skills = /datum/skills/specialist
 
