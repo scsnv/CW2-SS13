@@ -1,0 +1,80 @@
+image: i386/ubuntu:xenial
+
+variables:
+  GITLAB_CHANGELOG_PID: "21031593"
+  GITLAB_REPO_LINK: "git@gitlab.com:cmdevs/colonial-warfare.git"
+
+stages:
+  - build
+
+run_linters:
+  stage: build
+  before_script:
+    - apt update
+    - apt install -y software-properties-common
+    - add-apt-repository ppa:deadsnakes/ppa
+    - apt update
+    - apt install -y curl unzip build-essential libssl-dev build-essential libc6:i386 libgcc1:i386 libstdc++6:i386 python3.7 wget
+    - bash tools/ci/install_spaceman_dmm.sh dreamchecker
+  script:
+    - find . -name "*.json" -not -path "*/node_modules/*" -print0 | xargs -0 python3 ./tools/json_verifier.py
+    - ~/dreamchecker
+
+compile_tgui:
+  stage: build
+  image: node:buster
+  script:
+    - bash tgui/bin/tgui --lint
+
+compile_all_maps:
+  stage: build
+  before_script:
+    - apt update
+    - apt install -y software-properties-common
+    - add-apt-repository ppa:deadsnakes/ppa
+    - apt update
+    - apt install -y curl python3.7 unzip build-essential libc6:i386 libgcc1:i386 libstdc++6:i386
+  script:
+    - bash tools/ci/install_byond.sh
+    - source $HOME/BYOND/byond/bin/byondsetup
+    - python3 tools/ci/template_dm_generator.py
+    - bash tools/ci/dm.sh -DCIBUILDING -DCITESTING -DALL_MAPS ColonialMarinesALPHA.dme
+  artifacts:
+    paths:
+      - ColonialMarinesALPHA.dmb
+      - ColonialMarinesALPHA.rsc
+    expire_in: 20min
+
+changelog:
+    stage: build
+    before_script:
+      - apt-get update -qq
+      - apt-get install -y git python3 python3-dateutil python3-requests python3-yaml python3-bs4 -qq
+      - 'which ssh-agent || ( apt-get update -qy && apt-get install openssh-client -qqy )'
+      - eval `ssh-agent -s`
+      - echo "${SSH_PRIVATE_KEY}" | tr -d '\r' | ssh-add - > /dev/null # add ssh ke
+      - mkdir -p ~/.ssh
+      - chmod 700 ~/.ssh
+      - '[[ -f /.dockerenv ]] && echo -e "Host *\n\tStrictHostKeyChecking no\n\n" > ~/.ssh/config'
+      - git config --local user.email "cmhub@somewhere.com"
+      - git config --local user.name "Changelogs"
+      - git config --local push.default simple
+      - git remote set-url origin ${GITLAB_REPO_LINK} # git configuration
+      - git checkout dev
+      - git pull origin dev
+    script:
+      - python3 tools/changelogs/generate_changelogs.py dev html/changelogs/
+      - python3 tools/GenerateChangelog/ss13_genchangelog.py html/changelog.html html/changelogs/
+      - git add .
+      - git commit -m "changelog-${CI_COMMIT_BRANCH} [ci skip]" -a || true
+      - git push -u origin dev
+    artifacts:
+      paths:
+        - html/changelog.html
+        - html/changelogs
+      expire_in: 10min
+    only:
+      refs:
+        - dev #only dev
+      variables:
+        - $CHANGELOG_ENABLED
