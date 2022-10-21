@@ -292,9 +292,9 @@
 	idtype = /obj/item/card/id/gold
 	assignment = JOB_CO
 	rank = JOB_CO
-	paygrade = "O5"
-	role_comm_title = "CO"
-	minimum_age = 40
+	paygrade = "O1"
+	role_comm_title = "PL"
+	minimum_age = 22
 	skills = /datum/skills/commander
 
 	utility_hat = list(/obj/item/clothing/head/beret/cm)
@@ -339,9 +339,9 @@
 
 	idtype = /obj/item/card/id/gold/commodore
 	rank = JOB_CO
-	paygrade = "O5E"
-	role_comm_title = "CDRE"
-	minimum_age = 45
+	paygrade = "O2"
+	role_comm_title = "PL"
+	minimum_age = 23
 
 /datum/equipment_preset/uscm_ship/commander/commodore/load_gear(mob/living/carbon/human/H)
 	H.equip_to_slot_or_del(new /obj/item/clothing/under/marine/officer/bridge(H), WEAR_BODY)
@@ -361,9 +361,9 @@
 	idtype = /obj/item/card/id/silver
 	assignment = JOB_XO
 	rank = JOB_XO
-	paygrade = "O4"
-	role_comm_title = "XO"
-	minimum_age = 35
+	paygrade = "C1"
+	role_comm_title = "DPL"
+	minimum_age = 21
 	skills = /datum/skills/XO
 
 	dress_extra = list(/obj/item/storage/large_holster/ceremonial_sword/full)
@@ -398,10 +398,10 @@
 	access = list(ACCESS_MARINE_COMMANDER, ACCESS_MARINE_BRIDGE, ACCESS_MARINE_BRIG, ACCESS_MARINE_DROPSHIP, ACCESS_MARINE_LOGISTICS)
 	assignment = JOB_SO
 	rank = JOB_SO
-	paygrade = "O2"
-	role_comm_title = "SO"
-	minimum_age = 25
-	skills = /datum/skills/SO
+	paygrade = "E6"
+	role_comm_title = "PS"
+	minimum_age = 29
+	skills = /datum/skills/SL
 
 /datum/equipment_preset/uscm_ship/so/load_gear(mob/living/carbon/human/H)
 	var/backItem = /obj/item/storage/backpack/satchel
@@ -472,18 +472,25 @@
 	access = list(ACCESS_MARINE_BRIDGE, ACCESS_MARINE_DROPSHIP, ACCESS_MARINE_LOGISTICS, ACCESS_MARINE_PILOT)
 	assignment = JOB_PILOT
 	rank = JOB_PILOT
-	paygrade = "O1" //Technically Second Lieutenant equivalent, but 2ndLT doesn't exist in Marine pay grade, so Ensign
-	role_comm_title = "PO"
-	skills = /datum/skills/pilot
+	paygrade = "E5" //Technically Second Lieutenant equivalent, but 2ndLT doesn't exist in Marine pay grade, so Ensign stfu nerd
+	role_comm_title = "SCL"
+	skills = /datum/skills/SL
 
 /datum/equipment_preset/uscm_ship/po/load_gear(mob/living/carbon/human/H)
 	var/backItem = /obj/item/storage/backpack/satchel
-	if(H.client && H.client.prefs && (H.client.prefs.backbag == 1))
+	if (H.client && H.client.prefs && (H.client.prefs.backbag == 1))
 		backItem = /obj/item/storage/backpack/marine
 
+	H.equip_to_slot_or_del(new /obj/item/device/radio/headset/almayer/mcom(H), WEAR_EAR)
+	H.equip_to_slot_or_del(new /obj/item/clothing/under/marine/officer/bridge(H), WEAR_BODY)
+	H.equip_to_slot_or_del(new /obj/item/clothing/shoes/dress(H), WEAR_FEET)
+	H.equip_to_slot_or_del(new /obj/item/storage/belt/gun/m4a3/commander(H), WEAR_WAIST)
+	H.equip_to_slot_or_del(new /obj/item/clothing/head/cmcap/ro(H), WEAR_HEAD)
 	H.equip_to_slot_or_del(new backItem(H), WEAR_BACK)
-	H.equip_to_slot_or_del(new /obj/item/clothing/under/marine/officer/pilot(H), WEAR_BODY)
-	H.equip_to_slot_or_del(new /obj/item/clothing/shoes/marine/knife(H), WEAR_FEET)
+	H.equip_to_slot_or_del(new /obj/item/storage/pouch/general/large(H), WEAR_R_STORE)
+	H.equip_to_slot_or_del(new /obj/item/device/binoculars(H), WEAR_L_HAND)
+
+	H.hud_set_squad()
 
 //*****************************************************************************************************/
 
@@ -493,21 +500,19 @@
 
 	utility_under = list(/obj/item/clothing/under/marine/officer/pilot)
 
-/datum/equipment_preset/uscm_ship/po/full/load_gear(mob/living/carbon/human/H)
+/datum/equipment_preset/uscm_ship/so/full/load_gear(mob/living/carbon/human/H)
 	var/backItem = /obj/item/storage/backpack/satchel
-	if(H.client && H.client.prefs && (H.client.prefs.backbag == 1))
+	if (H.client && H.client.prefs && (H.client.prefs.backbag == 1))
 		backItem = /obj/item/storage/backpack/marine
 
 	H.equip_to_slot_or_del(new /obj/item/device/radio/headset/almayer/mcom(H), WEAR_EAR)
-	H.equip_to_slot_or_del(new /obj/item/clothing/under/marine/officer/pilot(H), WEAR_BODY)
-	H.equip_to_slot_or_del(new /obj/item/clothing/shoes/marine/knife(H), WEAR_FEET)
-	H.equip_to_slot_or_del(new /obj/item/clothing/gloves/yellow(H), WEAR_HANDS)
+	H.equip_to_slot_or_del(new /obj/item/clothing/under/marine/officer/bridge(H), WEAR_BODY)
+	H.equip_to_slot_or_del(new /obj/item/clothing/shoes/dress(H), WEAR_FEET)
 	H.equip_to_slot_or_del(new /obj/item/storage/belt/gun/m4a3/commander(H), WEAR_WAIST)
-	H.equip_to_slot_or_del(new /obj/item/clothing/suit/armor/vest/pilot(H), WEAR_JACKET)
+	H.equip_to_slot_or_del(new /obj/item/clothing/head/cmcap/ro(H), WEAR_HEAD)
 	H.equip_to_slot_or_del(new backItem(H), WEAR_BACK)
 	H.equip_to_slot_or_del(new /obj/item/storage/pouch/general/large(H), WEAR_R_STORE)
-	H.equip_to_slot_or_del(new /obj/item/clothing/head/helmet/marine/pilot(H), WEAR_HEAD)
-	H.equip_to_slot_or_del(new /obj/item/clothing/glasses/sunglasses(H), WEAR_EYES)
+	H.equip_to_slot_or_del(new /obj/item/device/binoculars(H), WEAR_L_HAND)
 
 	H.hud_set_squad()
 
